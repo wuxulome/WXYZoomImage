@@ -9,32 +9,23 @@
 Pod::Spec.new do |s|
   s.name             = "WXYZoomImage"
   s.version          = "0.1.0"
-  s.summary          = "A short description of WXYZoomImage."
+  s.summary          = "A easy way to zoom image."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = ""
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/WXYZoomImage"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.homepage         = "https://github.com/wuxulome/WXYZoomImage"
+  s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "吴旭" => "wuxulome@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/WXYZoomImage.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/wuxulome/WXYZoomImage.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/*.{h,m}'
   s.resource_bundles = {
     'WXYZoomImage' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'SDWebImage', '~> 3.7.3'
 end
