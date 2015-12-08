@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface WXYViewController : UIViewController
+@interface WXYViewController : UITableViewController
 
 @end

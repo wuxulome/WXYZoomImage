@@ -1,0 +1,6 @@
+framework module Pods_WXYZoomImage_Example {
+  umbrella header "Pods-WXYZoomImage_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

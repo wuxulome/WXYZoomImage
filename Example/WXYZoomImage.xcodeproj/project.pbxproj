@@ -22,7 +22,11 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		8181B37E3B5CB9998582D0A5 /* Pods_WXYZoomImage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD363DCA521E26DD64DFD49E /* Pods_WXYZoomImage_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C2A012B41C167DAC0076F792 /* WXYNormalZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A012B31C167DAC0076F792 /* WXYNormalZoomController.m */; };
+		C2A012B61C16AB5A0076F792 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A012B51C16AB5A0076F792 /* Launch Screen.storyboard */; };
+		C2A012BB1C16ADF20076F792 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A012B81C16ADF20076F792 /* 1.jpg */; };
+		C2A012BE1C16B7720076F792 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A012BD1C16B7720076F792 /* 0.jpg */; };
+		C2A012C01C16B81F0076F792 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A012BF1C16B81F0076F792 /* 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +62,15 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		600808DFDBABA4ED8BC607FA /* Pods-WXYZoomImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXYZoomImage_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXYZoomImage_Example/Pods-WXYZoomImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9A86EB4DBF49ED08F97A0E8F /* Pods-WXYZoomImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXYZoomImage_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXYZoomImage_Tests/Pods-WXYZoomImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9B8591788C2939F6BF9BAD5D /* WXYZoomImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WXYZoomImage.podspec; path = ../WXYZoomImage.podspec; sourceTree = "<group>"; };
 		BC398AE888C2A1E6779ACA19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C2A012B21C167DAC0076F792 /* WXYNormalZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYNormalZoomController.h; sourceTree = "<group>"; };
+		C2A012B31C167DAC0076F792 /* WXYNormalZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYNormalZoomController.m; sourceTree = "<group>"; };
+		C2A012B51C16AB5A0076F792 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C2A012B81C16ADF20076F792 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C2A012BD1C16B7720076F792 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		C2A012BF1C16B81F0076F792 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		CD363DCA521E26DD64DFD49E /* Pods_WXYZoomImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXYZoomImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9FD7BC3DC6F7380B1F73DF /* Pods-WXYZoomImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXYZoomImage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXYZoomImage_Tests/Pods-WXYZoomImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA26790E04F14125F8D8CC1 /* Pods-WXYZoomImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXYZoomImage_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXYZoomImage_Example/Pods-WXYZoomImage_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,10 +141,15 @@
 			children = (
 				6003F59C195388D20070C39A /* WXYAppDelegate.h */,
 				6003F59D195388D20070C39A /* WXYAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WXYViewController.h */,
 				6003F5A6195388D20070C39A /* WXYViewController.m */,
+				C2A012B21C167DAC0076F792 /* WXYNormalZoomController.h */,
+				C2A012B31C167DAC0076F792 /* WXYNormalZoomController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				C2A012B51C16AB5A0076F792 /* Launch Screen.storyboard */,
+				C2A012BD1C16B7720076F792 /* 0.jpg */,
+				C2A012B81C16ADF20076F792 /* 1.jpg */,
+				C2A012BF1C16B81F0076F792 /* 2.jpg */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for WXYZoomImage";
@@ -276,7 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				C2A012BB1C16ADF20076F792 /* 1.jpg in Resources */,
+				C2A012B61C16AB5A0076F792 /* Launch Screen.storyboard in Resources */,
+				C2A012BE1C16B7720076F792 /* 0.jpg in Resources */,
+				C2A012C01C16B81F0076F792 /* 2.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -392,6 +409,7 @@
 			files = (
 				6003F59E195388D20070C39A /* WXYAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WXYViewController.m in Sources */,
+				C2A012B41C167DAC0076F792 /* WXYNormalZoomController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WXYZoomImage/WXYZoomImage-Prefix.pch";
 				INFOPLIST_FILE = "WXYZoomImage/WXYZoomImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -530,6 +549,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WXYZoomImage/WXYZoomImage-Prefix.pch";
 				INFOPLIST_FILE = "WXYZoomImage/WXYZoomImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

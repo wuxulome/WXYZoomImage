@@ -1,0 +1,6 @@
+#include "WXYZoomImage.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/WXYZoomImage" "${PODS_ROOT}/Headers/Public"
+OTHER_LDFLAGS = ${WXYZOOMIMAGE_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
