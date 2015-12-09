@@ -36,5 +36,5 @@ This library requires a deployment target of iOS 6.0 or greater.
 
 License
 ==============
-YYKit is provided under the MIT license. See LICENSE file for details.
+WXYZoomImage is provided under the MIT license. See LICENSE file for details.
 
