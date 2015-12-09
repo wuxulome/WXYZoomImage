@@ -11,19 +11,19 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A easy way to zoom image."
 
-  s.description      = ""
-
   s.homepage         = "https://github.com/wuxulome/WXYZoomImage"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "吴旭" => "wuxulome@gmail.com" }
   s.source           = { :git => "https://github.com/wuxulome/WXYZoomImage.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '6.0'
+  s.ios.deployment_target = '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/*.{h,m}'
+  s.source_files = 'WXYZoomImage/Classes/*.{h,m}'
+  s.public_header_files = 'WXYZoomImage/Classes/*.{h}'
   s.resource_bundles = {
-    'WXYZoomImage' => ['Pod/Assets/*.png']
+    'WXYZoomImage' => ['WXYZoomImage/Assets/*.png']
   }
 
   s.frameworks = 'UIKit'

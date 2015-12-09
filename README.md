@@ -1,29 +1,40 @@
-# WXYZoomImage
+WXYZoomImage
+==============
 
-[![CI Status](http://img.shields.io/travis/吴旭/WXYZoomImage.svg?style=flat)](https://travis-ci.org/吴旭/WXYZoomImage)
-[![Version](https://img.shields.io/cocoapods/v/WXYZoomImage.svg?style=flat)](http://cocoapods.org/pods/WXYZoomImage)
-[![License](https://img.shields.io/cocoapods/l/WXYZoomImage.svg?style=flat)](http://cocoapods.org/pods/WXYZoomImage)
-[![Platform](https://img.shields.io/cocoapods/p/WXYZoomImage.svg?style=flat)](http://cocoapods.org/pods/WXYZoomImage)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/WXYZoomImage/master/LICENSE)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/v/WXYZoomImage.svg?style=flat)](http://cocoapods.org/?q=WXYZoomImage)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/p/WXYZoomImage.svg?style=flat)](http://cocoapods.org/?q=WXYZoomImage)&nbsp;
+[![Support](https://img.shields.io/badge/support-iOS%206%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
+[![Build Status](https://travis-ci.org/ibireme/WXYZoomImage.svg?branch=master)](https://travis-ci.org/ibireme/WXYZoomImage)
 
-## Usage
+WXYZoomImage is a image zoom tool.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+Installation
+==============
 
-## Installation
+### CocoaPods
 
-WXYZoomImage is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+1. Add `pod "WXYZoomImage"` to your Podfile.
+2. Run `pod install` or `pod update`.
+3. Import \<WXYZoomImage/WXYZoomImageManager.h\>.
 
-```ruby
-pod "WXYZoomImage"
-```
+### Manually
 
-## Author
+1. Download all the files in the `WXYZoomImage` subdirectory.
+2. Add the source files to your Xcode project.
+3. Import `WXYZoomImageManager.h`.
 
-吴旭, wuxulome@gmail.com
+Documentation
+==============
+Full API documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/WXYZoomImage/).<br/>
+You can also install documentation locally using [appledoc](https://github.com/tomaz/appledoc).
 
-## License
+Requirements
+==============
+This library requires a deployment target of iOS 6.0 or greater.
 
-WXYZoomImage is available under the MIT license. See the LICENSE file for more info.
+License
+==============
+YYKit is provided under the MIT license. See LICENSE file for details.
+

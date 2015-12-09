@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/WXYZoomImage.h
+../../../../../WXYZoomImage/Classes/WXYZoomImage.h

@@ -15,8 +15,7 @@ typedef NS_ENUM(NSUInteger, WXYZoomImageDirection) {
 };
 
 #import <UIKit/UIKit.h>
-
-@class WXYZoomImage;
+#import "WXYZoomImage.h"
 
 @protocol WXYZoomImageManagerDelegate <NSObject>
 

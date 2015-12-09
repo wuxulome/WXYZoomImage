@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CGGeometry.h>
 
 @interface WXYZoomImage : NSObject
 @property (nonatomic, copy) NSString *imageURL; //图片链接

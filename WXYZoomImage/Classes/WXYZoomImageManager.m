@@ -8,7 +8,6 @@
 
 #import "WXYZoomImageManager.h"
 #import "WXYZoomImageScrollView.h"
-#import "WXYZoomImage.h"
 
 @interface WXYZoomImageManager()<UIScrollViewDelegate, WXYZoomImageScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *showScrollView;

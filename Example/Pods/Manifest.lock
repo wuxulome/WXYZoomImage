@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  WXYZoomImage: 4a7ea97813f51d5c5f14e377732cc971570f00fb
+  WXYZoomImage: 72b279cafb35a5d151fe794330dfd2e76bcff76f
   YYWebImage: a65b28461dc63d3b84de7c06ea0fbc4d46cdcd16
 
 COCOAPODS: 0.38.2
