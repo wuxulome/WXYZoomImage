@@ -33,9 +33,9 @@
 @property (nonatomic, assign) NSUInteger index;                     //Default is 0
 @property (nonatomic, assign, getter=canSaveImage) BOOL saveImage;  //Default is Yes
 
-- (void)setContentWithFrame:(CGRect)rect;
-- (void)setImage:(WXYZoomImage *)image;
-- (void)setAnimationRect;
+- (void)setStartFrame:(CGRect)rect image:(WXYZoomImage *)image placeholderImage:(UIImage *)placeholderImage;
+- (void)showWithAnimation:(BOOL)show;
+
 - (void)rechangeInitRdct;
 
 @end

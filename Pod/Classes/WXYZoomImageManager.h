@@ -52,6 +52,7 @@ typedef NS_ENUM(NSUInteger, WXYZoomImageDirection) {
 @interface WXYZoomImageManager : UIWindow
 @property (nonatomic, weak) id<WXYZoomImageManagerDelegate> mDelegate;
 @property (nonatomic, assign, getter=canSaveImage) BOOL saveImage;  //Default is Yes
+@property (nonatomic, strong) UIImage *placeholderImage;  //Default is
 
 /**
  *  初始化
@@ -61,13 +62,11 @@ typedef NS_ENUM(NSUInteger, WXYZoomImageDirection) {
 /*!
  *  @brief  设置图片和当前index
  *
- *  @param imageViews   含有UIImageView对象的数组
+ *  @param imageViews   含有UIView对象的数组
  *  @param images       含有WXYZoomImage对象的数组
  *  @param currentIndex 当前点击图片在数组中的位置
  */
-- (void)setViews:(NSArray<UIView *> *)views
-          images:(NSArray<WXYZoomImage *> *)images
-    currentIndex:(NSUInteger)currentIndex;
+- (void)setViews:(NSArray<UIView *> *)views images:(NSArray<WXYZoomImage *> *)images showIndex:(NSUInteger)showIndex;
 
 /**
  *  启动放大动画

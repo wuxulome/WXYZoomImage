@@ -62,7 +62,7 @@
     CGPoint currentPoint = [gesture locationInView:self.view];
     for (int i = 0; i < 3; i++) {
         if (CGRectContainsPoint(CGRectMake(100, 100+120*i, 100, 100), currentPoint) ) {
-            [self.manager setViews:[NSArray arrayWithArray:self.views] images:[NSArray arrayWithArray:self.images] currentIndex:i];
+            [self.manager setViews:[NSArray arrayWithArray:self.views] images:[NSArray arrayWithArray:self.images] showIndex:i];
             [self.manager starZoomInAnimation];
             
             [self.manager setWillDismissBlock:^{

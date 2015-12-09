@@ -10,6 +10,6 @@
 #import <CoreGraphics/CGGeometry.h>
 
 @interface WXYZoomImage : NSObject
-@property (nonatomic, copy) NSString *imageURL; //图链接
-@property (nonatomic, assign) CGSize imageSize; //图尺寸
+@property (nonatomic, copy) NSString *imageURL; //图片链接
+@property (nonatomic, assign) CGSize imageSize; //图片尺寸
 @end

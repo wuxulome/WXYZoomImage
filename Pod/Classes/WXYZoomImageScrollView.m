@@ -15,10 +15,10 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
 
 @interface WXYZoomImageScrollView()<UIScrollViewDelegate, UIActionSheetDelegate>
 @property (nonatomic, strong) UIImageView *imgView;
-@property (nonatomic, assign) CGRect scaleOriginRect; //记录自己的位置
-@property (nonatomic, assign) CGSize imgSize; //图片的大小
-@property (nonatomic, assign) CGRect initRect;//缩放前大小
 @property (nonatomic, strong) UIActivityIndicatorView *progressView;
+
+@property (nonatomic, assign) CGRect startRect;//缩放前大小
+@property (nonatomic, strong) WXYZoomImage *zoomImage;
 @end
 
 @implementation WXYZoomImageScrollView
@@ -39,6 +39,7 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
         
         _index = 0;
         _saveImage = YES;
+        _zoomImage = [[WXYZoomImage alloc] init];
         
         _imgView = [[UIImageView alloc] init];
         _imgView.clipsToBounds = YES;
@@ -78,61 +79,117 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
 
 #pragma mark - public
 
-- (void)setContentWithFrame:(CGRect)rect
+- (void)setStartFrame:(CGRect)rect image:(WXYZoomImage *)image placeholderImage:(UIImage *)placeholderImage
 {
     self.imgView.frame = rect;
-    self.initRect = rect;
+    self.imgView.image = placeholderImage;
+    self.startRect = rect;
+    self.zoomImage = image;
 }
 
-- (void)setAnimationRect
+- (void)showWithAnimation:(BOOL)show
 {
-    self.imgView.frame = self.scaleOriginRect;
+    NSString *cacheKey = [[SDWebImageManager sharedManager] cacheKeyForURL:[NSURL URLWithString:self.zoomImage.imageURL]];
+    UIImage *image = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:cacheKey];
+    if (image) {
+        //判断首先缩放的值
+        CGFloat scaleX = CGRectGetWidth(self.frame)/image.size.width;
+        CGFloat scaleY = CGRectGetHeight(self.frame)/ image.size.height;
+        CGRect rect;
+        
+        //倍数小的，先到边缘
+        if (scaleX > scaleY) {
+            //Y方向先到边缘
+            CGFloat imgViewWidth = image.size.width * scaleY;
+            rect = CGRectMake(CGRectGetWidth(self.frame)/2-imgViewWidth/2, 0, imgViewWidth, CGRectGetHeight(self.frame));
+        } else {
+            //X先到边缘
+            CGFloat imgViewHeight = image.size.height * scaleX;
+            rect = CGRectMake(0, CGRectGetHeight(self.frame)/2-imgViewHeight/2, CGRectGetWidth(self.frame), imgViewHeight);
+        }
+        
+        self.imgView.image = image;
+        if (show) {
+            [UIView animateWithDuration:0.3f animations:^{
+                self.imgView.frame = rect;
+            }];
+        } else {
+            self.imgView.frame = rect;
+        }
+    } else {
+        //判断首先缩放的值
+        CGFloat scaleX = CGRectGetWidth(self.frame)/CGRectGetWidth(self.imgView.frame);
+        CGFloat scaleY = CGRectGetHeight(self.frame)/ CGRectGetHeight(self.imgView.frame);
+        CGRect rect;
+        
+        //倍数小的，先到边缘
+        if (scaleX > scaleY) {
+            //Y方向先到边缘
+            CGFloat imgViewWidth = CGRectGetWidth(self.imgView.frame)*scaleY;
+            rect = CGRectMake(CGRectGetWidth(self.frame)/2-imgViewWidth/2, 0, imgViewWidth, CGRectGetHeight(self.frame));
+        } else {
+            //X先到边缘
+            CGFloat imgViewHeight = CGRectGetHeight(self.imgView.frame)*scaleX;
+            rect = CGRectMake(0, CGRectGetHeight(self.frame)/2-imgViewHeight/2, CGRectGetWidth(self.frame), imgViewHeight);
+        }
+        
+        if (show) {
+            [UIView animateWithDuration:0.3f animations:^{
+                self.imgView.frame = rect;
+            } completion:^(BOOL finished) {
+                [self getImageAndModifySize];
+            }];
+        } else {
+            self.imgView.frame = rect;
+            [self getImageAndModifySize];
+        }
+    }
 }
 
 - (void)rechangeInitRdct
 {
     self.zoomScale = 1.0;
-    self.imgView.frame = self.initRect;
+    self.imgView.frame = self.startRect;
 }
 
-- (void)setImage:(WXYZoomImage *)image
+#pragma mark - get image
+
+- (void)getImageAndModifySize
 {
-    if(image) {
+    if(self.zoomImage) {
         //设置图片
         __weak typeof(self) weakSelf = self;
-        [self.imgView sd_setImageWithURL:[NSURL URLWithString:image.imageURL]
-                        placeholderImage:nil
+        [self.imgView sd_setImageWithURL:[NSURL URLWithString:self.zoomImage.imageURL]
+                        placeholderImage:self.imgView.image
                                  options:0
                                 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                                     weakSelf.progressView.hidden = NO;
                                     [weakSelf.progressView startAnimating];
                                 }
                                completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                                   [weakSelf.progressView stopAnimating];
+                                   __strong typeof(weakSelf) strongSelf = weakSelf;
+                                   
+                                   [strongSelf.progressView stopAnimating];
                                    if (!error && image) {
-                                       [weakSelf.imgView setImage:image];
+                                       //判断首先缩放的值
+                                       CGFloat scaleX = CGRectGetWidth(strongSelf.frame)/image.size.width;
+                                       CGFloat scaleY = CGRectGetHeight(strongSelf.frame)/image.size.height;
+                                       
+                                       //倍数小的，先到边缘
+                                       if (scaleX > scaleY) {
+                                           //Y方向先到边缘
+                                           CGFloat imgViewWidth = image.size.width*scaleY;
+                                           strongSelf.imgView.frame = (CGRect){CGRectGetWidth(strongSelf.frame)/2-imgViewWidth/2,0,imgViewWidth,CGRectGetHeight(strongSelf.frame)};
+                                       } else {
+                                           //X先到边缘
+                                           CGFloat imgViewHeight = image.size.height*scaleX;
+                                           strongSelf.imgView.frame = (CGRect){0,CGRectGetHeight(strongSelf.frame)/2-imgViewHeight/2,CGRectGetWidth(strongSelf.frame),imgViewHeight};
+                                       }
+                                       strongSelf.imgView.image = image;
                                    } else {
                                        
                                    }
                                }];
-        self.imgSize = image.imageSize;
-        
-        //判断首先缩放的值
-        float scaleX = self.frame.size.width/self.imgSize.width;
-        float scaleY = self.frame.size.height/self.imgSize.height;
-        
-        //倍数小的，先到边缘
-        if (scaleX > scaleY) {
-            //Y方向先到边缘
-            float imgViewWidth = self.imgSize.width*scaleY;
-            
-            self.scaleOriginRect = (CGRect){self.frame.size.width/2-imgViewWidth/2,0,imgViewWidth,self.frame.size.height};
-        } else {
-            //X先到边缘
-            float imgViewHeight = self.imgSize.height*scaleX;
-            
-            self.scaleOriginRect = (CGRect){0,self.frame.size.height/2-imgViewHeight/2,self.frame.size.width,imgViewHeight};
-        }
     }
 }
 

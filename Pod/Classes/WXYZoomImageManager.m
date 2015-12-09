@@ -12,7 +12,7 @@
 
 @interface WXYZoomImageManager()<UIScrollViewDelegate, WXYZoomImageScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *showScrollView;
-@property (nonatomic, assign) NSUInteger currentIndex;
+@property (nonatomic, assign) NSUInteger showIndex;
 @property (nonatomic, copy) NSArray<UIView *> *views;
 @property (nonatomic, copy) NSArray<WXYZoomImage *> *images;
 @property (nonatomic, copy) void(^willDismissBlock)(void);
@@ -36,7 +36,7 @@
         
         _views = [NSArray array];
         _images = [NSArray array];
-        _currentIndex = 0;
+        _showIndex = 0;
         _saveImage = YES;
         
         _showScrollView = [[UIScrollView alloc] initWithFrame:frame];
@@ -54,14 +54,12 @@
 
 #pragma mark - public
 
-- (void)setViews:(NSArray<UIView *> *)views
-          images:(NSArray<WXYZoomImage *> *)images
-    currentIndex:(NSUInteger)currentIndex
+- (void)setViews:(NSArray<UIView *> *)views images:(NSArray<WXYZoomImage *> *)images showIndex:(NSUInteger)showIndex
 {
-    if (currentIndex < views.count) {
+    if (showIndex < views.count) {
         _views = views;
         _images = images;
-        _currentIndex = currentIndex;
+        _showIndex = showIndex;
         
         CGSize contentSize = self.showScrollView.contentSize;
         contentSize.width = CGRectGetWidth(self.frame) * views.count;
@@ -76,7 +74,7 @@
     }
     
     CGPoint contentOffset = self.showScrollView.contentOffset;
-    contentOffset.x = self.currentIndex * CGRectGetWidth(self.frame);
+    contentOffset.x = self.showIndex * CGRectGetWidth(self.frame);
     self.showScrollView.contentOffset = contentOffset;
     
     for (int i = 0; i < self.views.count; i++) {
@@ -87,17 +85,12 @@
         
         WXYZoomImageScrollView *imgScrollView = [[WXYZoomImageScrollView alloc] initWithFrame:(CGRect){i*CGRectGetWidth(self.showScrollView.bounds), 0, self.showScrollView.bounds.size}];
         imgScrollView.index = i;
-        [imgScrollView setContentWithFrame:convertRect];
-        [imgScrollView setImage:image];
         imgScrollView.zDelegate = self;
         imgScrollView.saveImage = self.canSaveImage;
+        [imgScrollView setStartFrame:convertRect image:image placeholderImage:[self placeholderImageWithIndex:i]];
         [self.showScrollView addSubview:imgScrollView];
         
-        if (i == self.currentIndex) {
-            [self setOriginFrame:imgScrollView];;
-        } else {
-            [imgScrollView setAnimationRect];
-        }
+        [imgScrollView showWithAnimation:(i == self.showIndex)];
     }
     
     [UIView animateWithDuration:0.2f animations:^{
@@ -137,13 +130,23 @@
     return self.showScrollView.contentOffset.x / CGRectGetWidth(self.showScrollView.bounds);
 }
 
-#pragma mark - private
+#pragma mark - placeholder Image
 
-- (void)setOriginFrame:(WXYZoomImageScrollView *)sender
+- (UIImage *)placeholderImageWithIndex:(NSUInteger)index
 {
-    [UIView animateWithDuration:0.3f animations:^{
-        [sender setAnimationRect];
-    }];
+    UIView *view = self.views[index];
+    
+    if ([view isKindOfClass:[UIImageView class]]) {
+        UIImageView *v = (UIImageView *)view;
+        return v.image ? :self.placeholderImage;
+    }
+    
+    if ([view isKindOfClass:[UIButton class]]) {
+        UIButton *v = (UIButton *)view;
+        return v.imageView.image ? :self.placeholderImage;
+    }
+    
+    return self.placeholderImage;
 }
 
 #pragma mark - WXYZoomImageScrollViewDelegate
