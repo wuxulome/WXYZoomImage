@@ -47,7 +47,6 @@
         image.imageURL = @[@"http://h.hiphotos.baidu.com/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=1fc42a91be3eb13550cabfe9c777c3b6/a5c27d1ed21b0ef4841b9e27dfc451da80cb3ed3.jpg",
                            @"http://img5.duitang.com/uploads/item/201301/22/20130122185342_zG2GV.jpeg",
                            @"http://img4.duitang.com/uploads/item/201309/13/20130913202122_NaL8B.jpeg"][i];
-        image.imageSize = CGSizeMake([@[@1280, @600, @1280][i] floatValue], [@[@800, @375, @800][i] floatValue]);
         [self.images addObject:image];
     }
     

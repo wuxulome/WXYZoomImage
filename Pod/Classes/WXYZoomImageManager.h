@@ -70,8 +70,6 @@ typedef NS_ENUM(NSUInteger, WXYZoomImageDirection) {
 
 /**
  *  启动放大动画
- *
- *  @param window 放大前主window
  */
 - (void)starZoomInAnimation;
 

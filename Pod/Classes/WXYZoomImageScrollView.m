@@ -8,13 +8,10 @@
 
 #import "WXYZoomImageScrollView.h"
 #import "WXYZoomImage.h"
-#import "UIImageView+WebCache.h"
-
-static NSString * const title = @"保存失败";
-static NSString * const message = @"建议开启图片访问权限（设置>隐私>照片）";
+#import <YYWebImage/YYWebImage.h>
 
 @interface WXYZoomImageScrollView()<UIScrollViewDelegate, UIActionSheetDelegate>
-@property (nonatomic, strong) UIImageView *imgView;
+@property (nonatomic, strong) YYAnimatedImageView *imgView;
 @property (nonatomic, strong) UIActivityIndicatorView *progressView;
 
 @property (nonatomic, assign) CGRect startRect;//缩放前大小
@@ -41,7 +38,7 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
         _saveImage = YES;
         _zoomImage = [[WXYZoomImage alloc] init];
         
-        _imgView = [[UIImageView alloc] init];
+        _imgView = [[YYAnimatedImageView alloc] init];
         _imgView.clipsToBounds = YES;
         _imgView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:self.imgView];
@@ -89,9 +86,34 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
 
 - (void)showWithAnimation:(BOOL)show
 {
-    NSString *cacheKey = [[SDWebImageManager sharedManager] cacheKeyForURL:[NSURL URLWithString:self.zoomImage.imageURL]];
-    UIImage *image = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:cacheKey];
-    if (image) {
+    if (self.zoomImage.image) {
+        //判断首先缩放的值
+        CGFloat scaleX = CGRectGetWidth(self.frame)/self.zoomImage.image.size.width;
+        CGFloat scaleY = CGRectGetHeight(self.frame)/ self.zoomImage.image.size.height;
+        CGRect rect;
+        
+        //倍数小的，先到边缘
+        if (scaleX > scaleY) {
+            //Y方向先到边缘
+            CGFloat imgViewWidth = self.zoomImage.image.size.width * scaleY;
+            rect = CGRectMake(CGRectGetWidth(self.frame)/2-imgViewWidth/2, 0, imgViewWidth, CGRectGetHeight(self.frame));
+        } else {
+            //X先到边缘
+            CGFloat imgViewHeight = self.zoomImage.image.size.height * scaleX;
+            rect = CGRectMake(0, CGRectGetHeight(self.frame)/2-imgViewHeight/2, CGRectGetWidth(self.frame), imgViewHeight);
+        }
+        
+        self.imgView.image = self.zoomImage.image;
+        if (show) {
+            [UIView animateWithDuration:0.3f animations:^{
+                self.imgView.frame = rect;
+            }];
+        } else {
+            self.imgView.frame = rect;
+        }
+    } else if ([[YYImageCache sharedCache] containsImageForKey:self.zoomImage.imageURL]) {
+        UIImage *image = [[YYImageCache sharedCache] getImageForKey:self.zoomImage.imageURL];
+        
         //判断首先缩放的值
         CGFloat scaleX = CGRectGetWidth(self.frame)/image.size.width;
         CGFloat scaleY = CGRectGetHeight(self.frame)/ image.size.height;
@@ -159,37 +181,38 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
     if(self.zoomImage) {
         //设置图片
         __weak typeof(self) weakSelf = self;
-        [self.imgView sd_setImageWithURL:[NSURL URLWithString:self.zoomImage.imageURL]
-                        placeholderImage:self.imgView.image
-                                 options:0
+        [self.imgView yy_setImageWithURL:[NSURL URLWithString:self.zoomImage.imageURL]
+                             placeholder:self.imgView.image
+                                 options:YYWebImageOptionUseNSURLCache
                                 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                                     weakSelf.progressView.hidden = NO;
                                     [weakSelf.progressView startAnimating];
                                 }
-                               completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                                   __strong typeof(weakSelf) strongSelf = weakSelf;
-                                   
-                                   [strongSelf.progressView stopAnimating];
-                                   if (!error && image) {
-                                       //判断首先缩放的值
-                                       CGFloat scaleX = CGRectGetWidth(strongSelf.frame)/image.size.width;
-                                       CGFloat scaleY = CGRectGetHeight(strongSelf.frame)/image.size.height;
-                                       
-                                       //倍数小的，先到边缘
-                                       if (scaleX > scaleY) {
-                                           //Y方向先到边缘
-                                           CGFloat imgViewWidth = image.size.width*scaleY;
-                                           strongSelf.imgView.frame = (CGRect){CGRectGetWidth(strongSelf.frame)/2-imgViewWidth/2,0,imgViewWidth,CGRectGetHeight(strongSelf.frame)};
-                                       } else {
-                                           //X先到边缘
-                                           CGFloat imgViewHeight = image.size.height*scaleX;
-                                           strongSelf.imgView.frame = (CGRect){0,CGRectGetHeight(strongSelf.frame)/2-imgViewHeight/2,CGRectGetWidth(strongSelf.frame),imgViewHeight};
-                                       }
-                                       strongSelf.imgView.image = image;
-                                   } else {
-                                       
-                                   }
-                               }];
+                               transform:nil
+                              completion:^(UIImage *image, NSURL *url, YYWebImageFromType from, YYWebImageStage stage, NSError *error) {
+                                  __strong typeof(weakSelf) strongSelf = weakSelf;
+                                  
+                                  [strongSelf.progressView stopAnimating];
+                                  if (!error && image) {
+                                      //判断首先缩放的值
+                                      CGFloat scaleX = CGRectGetWidth(strongSelf.frame)/image.size.width;
+                                      CGFloat scaleY = CGRectGetHeight(strongSelf.frame)/image.size.height;
+                                      
+                                      //倍数小的，先到边缘
+                                      if (scaleX > scaleY) {
+                                          //Y方向先到边缘
+                                          CGFloat imgViewWidth = image.size.width*scaleY;
+                                          strongSelf.imgView.frame = (CGRect){CGRectGetWidth(strongSelf.frame)/2-imgViewWidth/2,0,imgViewWidth,CGRectGetHeight(strongSelf.frame)};
+                                      } else {
+                                          //X先到边缘
+                                          CGFloat imgViewHeight = image.size.height*scaleX;
+                                          strongSelf.imgView.frame = (CGRect){0,CGRectGetHeight(strongSelf.frame)/2-imgViewHeight/2,CGRectGetWidth(strongSelf.frame),imgViewHeight};
+                                      }
+                                      strongSelf.imgView.image = image;
+                                  } else {
+                                      
+                                  }
+                              }];
     }
 }
 
@@ -275,13 +298,8 @@ static NSString * const message = @"建议开启图片访问权限（设置>隐�
         if ([self.zDelegate respondsToSelector:@selector(saveImageFailedWithError:)]) {
             [self.zDelegate saveImageFailedWithError:error];
         } else {
-            if (error.code == -3310) {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil];
-                [alert show];
-            } else {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"保存失败" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil];
-                [alert show];
-            }
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"保存失败" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil];
+            [alert show];
         }
     }
 }

@@ -27,8 +27,8 @@
   },
   "frameworks": "UIKit",
   "dependencies": {
-    "SDWebImage": [
-      "~> 3.7.3"
+    "YYWebImage": [
+
     ]
   }
 }

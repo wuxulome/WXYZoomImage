@@ -11,5 +11,5 @@
 
 @interface WXYZoomImage : NSObject
 @property (nonatomic, copy) NSString *imageURL; //图片链接
-@property (nonatomic, assign) CGSize imageSize; //图片尺寸
+@property (nonatomic, strong) UIImage *image;   //当需要直接打开图片时使用此字段
 @end

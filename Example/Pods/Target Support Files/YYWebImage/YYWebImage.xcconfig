@@ -1,0 +1,2 @@
+YYWEBIMAGE_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/YYWebImage/Vendor"
+YYWEBIMAGE_OTHER_LDFLAGS = -l"sqlite3" -l"z" -framework "Accelerate" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "UIKit" -framework "WebP"

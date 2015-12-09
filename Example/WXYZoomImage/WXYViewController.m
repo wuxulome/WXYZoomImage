@@ -43,7 +43,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,8 +78,6 @@
     switch (indexPath.row) {
         case 0:
             return @"normal zoom";
-        case 1:
-            return @"Title and Detail";
         default:
             return nil;
     }
