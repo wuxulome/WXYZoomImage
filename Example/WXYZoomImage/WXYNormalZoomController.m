@@ -75,12 +75,12 @@
 
 - (void)didScrollToView:(UIView *)view index:(NSUInteger)index
 {
-    NSLog(@"%@", @(index));
+    NSLog(@"index = %@", @(index));
 }
 
 - (void)scrollToBorder:(WXYZoomImageDirection)direction
 {
-    NSLog(@"%@", @(direction));
+    NSLog(@"direction = %@", @(direction));
 }
 
 - (void)saveImageSuccess:(NSUInteger)index

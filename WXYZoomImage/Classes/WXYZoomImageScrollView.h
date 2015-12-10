@@ -32,9 +32,11 @@
 @property (nonatomic, weak) id<WXYZoomImageScrollViewDelegate> zDelegate;
 @property (nonatomic, assign) NSUInteger index;                     //Default is 0
 @property (nonatomic, assign, getter=canSaveImage) BOOL saveImage;  //Default is Yes
+@property (nonatomic, readonly, assign) BOOL loadImageSuccess;      //
 
 - (void)setStartFrame:(CGRect)rect image:(WXYZoomImage *)image placeholderImage:(UIImage *)placeholderImage;
-- (void)showWithAnimation:(BOOL)show;
+- (void)showWithAnimation:(BOOL)show loadImage:(BOOL)load;
+- (void)loadImageAndModifySize;
 
 - (void)rechangeInitRdct;
 

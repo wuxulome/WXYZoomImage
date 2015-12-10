@@ -52,10 +52,12 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'Pods-WXYZoomImage_Tests/Reachability.framework'
   install_framework 'Pods-WXYZoomImage_Tests/WXYZoomImage.framework'
   install_framework 'Pods-WXYZoomImage_Tests/YYWebImage.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'Pods-WXYZoomImage_Tests/Reachability.framework'
   install_framework 'Pods-WXYZoomImage_Tests/WXYZoomImage.framework'
   install_framework 'Pods-WXYZoomImage_Tests/YYWebImage.framework'
 fi

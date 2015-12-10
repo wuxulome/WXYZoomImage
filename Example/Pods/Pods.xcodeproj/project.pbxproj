@@ -9,218 +9,269 @@
 /* Begin PBXBuildFile section */
 		054509DAC1CCADA7DC7090A38E1469EB /* _YYWebImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AAC13A8FD135C4EB9F88E2579C6C9A /* _YYWebImageSetter.m */; };
 		055740813E5D1D378B3A2D903DB465A9 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B49721CEA9D7B1B06CE8A4CD5EA72B /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		099487D1D6FF4E7BAFDCB9DB66EFA57C /* WXYZoomImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F85E5D502B949F7AB9A8DE808B1681 /* WXYZoomImageManager.m */; };
 		0A7DBCEA8517127D511D14F84E492144 /* UIImage+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E25E85DC0215A8B00840EFDC22C376 /* UIImage+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA7A73949348A3330121C8590BDADA7 /* Reachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E61F9D1E15602E3BA8F1C800313572 /* Reachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D69BF688086BAEA4414DC7876497B49 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431C0A8F2AEF8ED89D7B10E274167420 /* AssetsLibrary.framework */; };
 		1126DBF1514E9DAEB9043292203D0B22 /* YYWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C846850E998BE436AD306258EE56B /* YYWebImageManager.m */; };
 		1310FBC07769682FB77CE03684A4E0F4 /* YYWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E977867F326B08936E6F1A18E2768B5F /* YYWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1372AAD15EEE4158EFC18B65080DBEB6 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC17FBEE7FB85BE2BB7580B2516654 /* Reachability.framework */; };
 		146673BE683C895844FE73C8E92F96AA /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C046BB8EAE918BCA3E8EDF166F7F8A /* YYImageCache.m */; };
 		15EA1124234EB148F707D578D1894410 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942E4D9553B962552CB45E8C7FA16B7C /* MobileCoreServices.framework */; };
-		172E7D4ED9CB64A54D01139A3EE587FB /* WXYZoomImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814CA1095ACE46E1B35AF339BB2FAE0 /* WXYZoomImageScrollView.m */; };
 		1A2EA4810044EFF8553E5AC63B2135B5 /* YYImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9B3F1915256F699A5BB59E80BBB5BD /* YYImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C2FA5278AFC068D7B7222D49C001B90 /* WXYZoomImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 790613C792720E7FE67A9C5D4F48D0A1 /* WXYZoomImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C7BE001F03E1D65C50E9A9B8DED7707 /* YYWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D788C6C2CDD9A628BE126575D988AFD /* YYWebImage-dummy.m */; };
-		1CCC36095FD22CF7FA8872B564A198E8 /* WXYZoomImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CA72E9F30AD7B46748CFAA1F43D450D /* WXYZoomImage.bundle */; };
 		1E02C1E56AB51152EAC48BCC26827A56 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BF01013C1DF6D27900C371C0B21386 /* CoreFoundation.framework */; };
 		1FA1225A4CBB5E6722018F2C11DEAACC /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E2D4B19E64A02E854763727F0FC7D0 /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245199AD17CCAF78F7C77D053AE22D9E /* YYWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9297CBD8B125E476C1D68639FB9B637A /* YYWebImageOperation.m */; };
 		25443BFDF8CB148BCAE502C348FD1FC2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058F28BFD16C91F35D56DB6A821FE6B9 /* Accelerate.framework */; };
 		2B1887961AA020391533C4BCDC779BA7 /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 624002866B86BF22F442CFD0364D65AF /* YYSpriteSheetImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		300A947A8B84A94A1AB10733E873E0D8 /* UIButton+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEBC95FDAB7D85E315971D7382E4229 /* UIButton+YYWebImage.m */; };
-		301C215E26B25FAF536FEB91E2431F4E /* WXYZoomImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C9316B2C5D30DB33904C4EB7093CA9AC /* WXYZoomImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B63B8B7D47DACFC0FABA18262460830 /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB35C6CD1B015E92C8883661112187F /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E28E7E0CC677741D2543C2064E1E879 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DEA59F5BF7D2CC5F23A97BB100074A /* YYMemoryCache.m */; };
 		407690E87242CC1FC7A07A540E73695B /* CALayer+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F6025438F4FA9DF26308E9BA87F7E0 /* CALayer+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43FEDCBA9310F5FDF05AA45EC78A2CF5 /* YYWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2556FDB918506D2EFEE1057D00F1DCDD /* YYWebImage.framework */; };
+		447B5B825E8BC97BB122FEF9CF8F81F3 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0572EBE655074A72E501427D7CF3C1F6 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44A4659D2E029A5BF3589B519C3A4CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5EA44DD20AC7E26FDF02934315CC33 /* UIKit.framework */; };
+		45A61003F1DC2EDE51C41D3B30694595 /* WXYZoomImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA047188B9AE8C7D1832A83DB61A5130 /* WXYZoomImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46A6052978DDA2A80A8F00906ECB789D /* WXYZoomImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FE97451D39A8B4E2850970CD7240B5 /* WXYZoomImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ABD00F860C0646FB74734D2FF8A23A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
-		4CCF64912647B6122D4B0F92E677A0A1 /* WXYZoomImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA37BB27B22284E6426C74AA116E99 /* WXYZoomImage-dummy.m */; };
+		505F9D17A435D6ABB1C467B63ABEED0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
+		508AFC65AC5B05E2D9B05142F3AC0152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
+		52C8F903C2C7F8AFE2DDC6A7CEB56B59 /* WXYZoomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5EF8E9501B0B44D16ECBE16DD32A4 /* WXYZoomImage.m */; };
 		5366626A7FC2B486BDB4A1088671B6B6 /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1EDD0D8899B9311923E9FE2183385C /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5553D769D045CCCBDB9F7D175009F813 /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 511EF4B0A6B6E41477D990C3D3772032 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65095B2CF74E1C3DA3D32210C3A4E4F9 /* WXYZoomImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AECF9D6BD08A929E8469A05F3704CE9 /* WXYZoomImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67971D4B9099DFB82E297F86D98DC9BC /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D5A0EE22E4085D51121A3E87244D7 /* YYFrameImage.m */; };
 		6FF3D8EB23DF81717DEF45AB38E46398 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 059299959EF3EB963C9FEB44B0893CB3 /* YYImageCoder.m */; };
-		7262BC0D7313C258840997C4FF497C32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
 		72748A55238D98ACCEC9F18F0D664288 /* YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E28FEE5929B59FD1CDCD522333759BD0 /* YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7829621E52FA608703C9A9FE056FC260 /* Pods-WXYZoomImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8C20F5A079C3C3A8B235782B3E4596 /* Pods-WXYZoomImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73846784AC9E3145CCAB3B51F400BCE4 /* WXYZoomImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A683A80501B61DB5212D5DC8A34F151A /* WXYZoomImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DADCBA848A6C91D89BE27D8F75AADBA /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5408EB7FB14C17B8E43C16DF485187 /* YYCache.m */; };
 		82DD300BEB1814077BE74961118164BE /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7E6E19A76F38883C578525F16B39ED /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87340F89B7FC932A3FA05A304BA8EB03 /* Pods-WXYZoomImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F9978D8F76D7C2607F0BEE746CFDF /* Pods-WXYZoomImage_Example-dummy.m */; };
-		876B939F195B961423D04E3B6A453D82 /* Pods-WXYZoomImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DF05F2DAC423097E4AB67D442428A1 /* Pods-WXYZoomImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		884630A42425721AA3174BD57BB55B61 /* WXYZoomImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC05EDD8B411F99414DE3A9055E665 /* WXYZoomImageManager.m */; };
+		918EE93CD7A1C3FCDC83506F27B4D572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
 		92C2FB2823D837DBAB8C5C1E98EB2245 /* UIButton+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 461BC07387A3DC25D5A95A9D7163FA12 /* UIButton+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95D1A10AF3371C5DCB23AF8B79356C54 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982A77FC87235937DF9DB726F1FFD0F2 /* SystemConfiguration.framework */; };
 		9939989A4A95C861FB81EED5E4501237 /* _YYWebImageSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B935FABDD971BB379B61F4DA174435A /* _YYWebImageSetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A190FE78045FD7CDB1A1959115D6BA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
+		9B0DA2992CC9014792D18745C9D43437 /* YYWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D995D7D49CBC526FB9BA4E6AD3BE60CD /* YYWebImage.framework */; };
 		9D9888A1C5BABE8B4EDC42C3AF7B2451 /* YYWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51215040FA060D07697710C3B3A4140E /* YYWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0549F7A8F647A3282C2E97362B32952 /* UIImageView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A20C6E428971AB4BB1ABC09AE60F03 /* UIImageView+YYWebImage.m */; };
-		A17350D685345E1860927938CA62D21E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
 		A5614B65DF777A178F04158277C137D6 /* UIImage+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D25C3DD684E5A546C9F0CA3DF4F84D7A /* UIImage+YYWebImage.m */; };
-		AF7E0FE036E58F69A4CD9B01980853FF /* Pods-WXYZoomImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B437DF16C0D54EB88C7524CAE8D943BD /* Pods-WXYZoomImage_Tests-dummy.m */; };
-		B059D2EAE65FB427765DFD60A9453F72 /* WXYZoomImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8745581889501545263B00B3D78406A /* WXYZoomImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B19F9207841626CE26C9B99FD37A5DA7 /* UIImageView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D8DC0C8C83A2EE60A2ED395F244EF17 /* UIImageView+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3A9FB9820A8CA72F861002BB2D83A0B /* MKAnnotationView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 79E759836DB9669983F67B8993E96E5B /* MKAnnotationView+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6525FB4350FABD77041F4C87D294627 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9B5F9FF795CCDCDDECB3F97943EF48 /* YYAnimatedImageView.m */; };
+		B826618693B16061705148B87E3ACB7E /* Pods-WXYZoomImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9CBF464D9EF2D41960BD625BB13B0 /* Pods-WXYZoomImage_Example-dummy.m */; };
+		BC1877006E31723EA17874F6499B530A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5EA44DD20AC7E26FDF02934315CC33 /* UIKit.framework */; };
 		BC9414878F2A1EF0625A97E239395E35 /* YYImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1488F57EF6C4D61ACDBC5F8E53F352 /* YYImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5258D73707145BC967E7542B1009A7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5EA44DD20AC7E26FDF02934315CC33 /* UIKit.framework */; };
 		C6AB1556032AE904D0C6494BAFB174CA /* YYImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF1C394CA248A026AA471DB2EA3DB51 /* YYImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C823DC446A10D003901E16C734B0BAB9 /* WXYZoomImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D283433C6A497BB74D6F4263CD2F58 /* WXYZoomImage-dummy.m */; };
 		CBC07785C116EA4201EEFE6549741F1C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C9D0C7E0E4F576965E16B3D0CC8B47 /* QuartzCore.framework */; };
 		CC5D91D7980B3B5C4FCD78C18EE35B82 /* CALayer+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 309D10FF86E2C2169C40FFB580C47B12 /* CALayer+YYWebImage.m */; };
+		CEE1EF44A1B4EA720837E78E6682B8E0 /* WXYZoomImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24959BEADCFD4077852ABF7F5E8E6ECF /* WXYZoomImageScrollView.m */; };
+		CF9B68E13B50E9879DCAB44F57280131 /* WXYZoomImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CA72E9F30AD7B46748CFAA1F43D450D /* WXYZoomImage.bundle */; };
+		CFE44D68B01F81A469714CA3B39C2D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */; };
+		CFE739980D4745AB668BB9CB0D17ADF2 /* Pods-WXYZoomImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A220578A160A50B224E07D49833657D /* Pods-WXYZoomImage_Tests-dummy.m */; };
 		D1F596EFDDB80FEF4A5EDC6AF3A46D4C /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA18D1A2536DB885A1217A7CEE05C2 /* YYSpriteSheetImage.m */; };
-		D2A18D2EC98EFAD0BF584FEF64F04199 /* WXYZoomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0DCD2CA938EE68DB355BF03F9F3FF7 /* WXYZoomImage.m */; };
 		D3BE2810499C20C3F3D3275FA6D59C72 /* YYWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BC4C6119901FF48BEF738C18C3C672 /* YYWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D663626D3BDEBB6901B44975949EC5A3 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E9B925CAB76CCB957E16AA8DE70418 /* YYImage.m */; };
-		DC405B131183E2A4BA022EE237917BC4 /* WXYZoomImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 74AA379A73C8E45975C67188BB7E9D14 /* WXYZoomImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6904C8764D28642E4D543881C5DFDA6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC068CB8A19DAD1A04803DA36C4ED716 /* Reachability.m */; };
 		DFD40269A534D43EBAF443F8DF90B28F /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CE869C75D0ACD53EBDEC7847BB43BD /* YYKVStorage.m */; };
 		E3F8D8CAE0473B9636D714CBBF75E93C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EB237DD9D97536F139872C0D3CB1EF /* ImageIO.framework */; };
 		EA7791243C250DED9128C8872B0E29D6 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F262A9F8000C21B63FF242FC91C5299 /* YYDiskCache.m */; };
 		F6442DF26A2A4A697758ED69504125E5 /* MKAnnotationView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B1C1E5A30AACDB556902C1C42A967 /* MKAnnotationView+YYWebImage.m */; };
+		F9F32D5A07EFB977393EE703DCF1ECD6 /* Pods-WXYZoomImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D1757AF267A7905209C901D2C3A363 /* Pods-WXYZoomImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0F3B76EE04902168B4504263D832D8 /* Pods-WXYZoomImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8EB3F4993FB35BF1EAA2FD200A42A02 /* Pods-WXYZoomImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC50A138B6081A87D473F3FC820EC64 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0067A1F5470D091155980C2FD458C2 /* Reachability-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0DBE75C6580ACE325F617031F0CF4FC1 /* PBXContainerItemProxy */ = {
+		05B0E77D293A2DA1A50142D9F5C70177 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D3C42AFB698BA08B779BDACE53E069F7;
 			remoteInfo = YYWebImage;
 		};
-		1561D41480E61816A48BA25C2330AF84 /* PBXContainerItemProxy */ = {
+		5AEE6C7F789E074ABD0909D0816B9949 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D3C42AFB698BA08B779BDACE53E069F7;
-			remoteInfo = YYWebImage;
+			remoteGlobalIDString = E01BC1BE8376000D08331E0AF1526257;
+			remoteInfo = Reachability;
 		};
-		6BB917BFC0CCC0F5B503F9021E1A4068 /* PBXContainerItemProxy */ = {
+		5CC914F15F5CB0ABC627EF3579273514 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D3C42AFB698BA08B779BDACE53E069F7;
-			remoteInfo = YYWebImage;
-		};
-		831EBFD87461F26DE2BBEFE928DED623 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85A28DFFB5122FDFB13C3AC49A0F2485;
+			remoteGlobalIDString = 25D4A525D2F4554367C12E81688D4A09;
 			remoteInfo = WXYZoomImage;
 		};
-		D2E7380BEB81033858D2A36DC8D21990 /* PBXContainerItemProxy */ = {
+		679A762F18BCEECF27E11F5273226E14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25D4A525D2F4554367C12E81688D4A09;
+			remoteInfo = WXYZoomImage;
+		};
+		8D01845496F8E6B2DEE2BB4C7972307F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01BC1BE8376000D08331E0AF1526257;
+			remoteInfo = Reachability;
+		};
+		B21A129FE75660C97713974EC039A212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3C42AFB698BA08B779BDACE53E069F7;
+			remoteInfo = YYWebImage;
+		};
+		EB08BA97AD9E5F5FFD0113E48DD67DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3C42AFB698BA08B779BDACE53E069F7;
+			remoteInfo = YYWebImage;
+		};
+		F0DE5B102932C90AC7F48943CDBDAF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01BC1BE8376000D08331E0AF1526257;
+			remoteInfo = Reachability;
+		};
+		FB29987776E18941607F4C56A2EFDFCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D85A920C35715A6BCA77639F3A04FC66;
 			remoteInfo = "WXYZoomImage-WXYZoomImage";
 		};
-		DFB6AD723DCB804E6AD2F35A9FD8BA8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85A28DFFB5122FDFB13C3AC49A0F2485;
-			remoteInfo = WXYZoomImage;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E9B925CAB76CCB957E16AA8DE70418 /* YYImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImage.m; path = YYWebImage/Image/YYImage.m; sourceTree = "<group>"; };
 		02BB524AE209DCA3185582CE324A9A54 /* Pods-WXYZoomImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXYZoomImage_Example-frameworks.sh"; sourceTree = "<group>"; };
-		03DF05F2DAC423097E4AB67D442428A1 /* Pods-WXYZoomImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXYZoomImage_Tests-umbrella.h"; sourceTree = "<group>"; };
 		043BC185D6513AA847405CE7F62507B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0572EBE655074A72E501427D7CF3C1F6 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		058F28BFD16C91F35D56DB6A821FE6B9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		059299959EF3EB963C9FEB44B0893CB3 /* YYImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCoder.m; path = YYWebImage/Image/YYImageCoder.m; sourceTree = "<group>"; };
+		06DDCC36878EADA44295E44DBB4007A0 /* YYWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYWebImage.xcconfig; sourceTree = "<group>"; };
 		0AD01F12911F1AAC5D3776E35AC44226 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E6C846850E998BE436AD306258EE56B /* YYWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageManager.m; path = YYWebImage/YYWebImageManager.m; sourceTree = "<group>"; };
 		0F262A9F8000C21B63FF242FC91C5299 /* YYDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYDiskCache.m; path = YYWebImage/Cache/YYDiskCache.m; sourceTree = "<group>"; };
 		1383782DB55B63B72C0F94BA2E496963 /* Pods-WXYZoomImage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXYZoomImage_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		13E25E85DC0215A8B00840EFDC22C376 /* UIImage+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+YYWebImage.h"; path = "YYWebImage/Categories/UIImage+YYWebImage.h"; sourceTree = "<group>"; };
-		166D141DE33789B179DF08D81718EFD8 /* Pods-WXYZoomImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A7E6E19A76F38883C578525F16B39ED /* YYCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCache.h; path = YYWebImage/Cache/YYCache.h; sourceTree = "<group>"; };
 		1B9B3F1915256F699A5BB59E80BBB5BD /* YYImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCache.h; path = YYWebImage/YYImageCache.h; sourceTree = "<group>"; };
-		1D1F9978D8F76D7C2607F0BEE746CFDF /* Pods-WXYZoomImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXYZoomImage_Example-dummy.m"; sourceTree = "<group>"; };
-		1E573BB01855BF0BE77852F911A7C18F /* YYWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYWebImage.xcconfig; sourceTree = "<group>"; };
-		2556FDB918506D2EFEE1057D00F1DCDD /* YYWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D283433C6A497BB74D6F4263CD2F58 /* WXYZoomImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXYZoomImage-dummy.m"; sourceTree = "<group>"; };
+		24959BEADCFD4077852ABF7F5E8E6ECF /* WXYZoomImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WXYZoomImageScrollView.m; sourceTree = "<group>"; };
+		2793168C6FAB71956EBB94EB89ACB4C1 /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
 		280D5A0EE22E4085D51121A3E87244D7 /* YYFrameImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFrameImage.m; path = YYWebImage/Image/YYFrameImage.m; sourceTree = "<group>"; };
+		28DC28AB107E22447E7C4E38521C671E /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA72E9F30AD7B46748CFAA1F43D450D /* WXYZoomImage.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXYZoomImage.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1488F57EF6C4D61ACDBC5F8E53F352 /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYWebImage/Image/YYImageCoder.h; sourceTree = "<group>"; };
+		2F0067A1F5470D091155980C2FD458C2 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
 		2F0B3367EFD0C28F79A9B9E7F341B514 /* Pods-WXYZoomImage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WXYZoomImage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		309D10FF86E2C2169C40FFB580C47B12 /* CALayer+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYWebImage.m"; path = "YYWebImage/Categories/CALayer+YYWebImage.m"; sourceTree = "<group>"; };
 		32EB237DD9D97536F139872C0D3CB1EF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		33C7DCCBA09D085F439C8EC30D66FC4A /* Pods-WXYZoomImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3A220578A160A50B224E07D49833657D /* Pods-WXYZoomImage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXYZoomImage_Tests-dummy.m"; sourceTree = "<group>"; };
+		3C8304D4527764F643129813844FFDD0 /* WXYZoomImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WXYZoomImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431C0A8F2AEF8ED89D7B10E274167420 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
-		45F998C419D85C5E01A6CD214AA7E766 /* WXYZoomImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WXYZoomImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A4455A2BE37803DEDD23D40CC6F86B /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Vendor/WebP.framework; sourceTree = "<group>"; };
 		461BC07387A3DC25D5A95A9D7163FA12 /* UIButton+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+YYWebImage.h"; path = "YYWebImage/Categories/UIButton+YYWebImage.h"; sourceTree = "<group>"; };
 		466D5C00F7AA22692197C7EB0DAE96ED /* WXYZoomImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WXYZoomImage.modulemap; sourceTree = "<group>"; };
-		4814CA1095ACE46E1B35AF339BB2FAE0 /* WXYZoomImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WXYZoomImageScrollView.m; sourceTree = "<group>"; };
-		498D2ECC09A5C10FDCB8645DF72DB344 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Vendor/WebP.framework; sourceTree = "<group>"; };
-		4A0DCD2CA938EE68DB355BF03F9F3FF7 /* WXYZoomImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WXYZoomImage.m; sourceTree = "<group>"; };
-		4C4136219866C2366D30E43D5F0E80E6 /* YYWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YYWebImage.modulemap; sourceTree = "<group>"; };
+		48FE97451D39A8B4E2850970CD7240B5 /* WXYZoomImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXYZoomImageScrollView.h; sourceTree = "<group>"; };
+		4C5D425BDFCE2725BCE83ECBFAB91298 /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Reachability.modulemap; sourceTree = "<group>"; };
 		4C98734A1D9396467D9585D43D7CBA23 /* Pods-WXYZoomImage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXYZoomImage_Tests-resources.sh"; sourceTree = "<group>"; };
-		4D84A75D7EC766BA9A77BCBCF7AB0B24 /* Pods-WXYZoomImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		511EF4B0A6B6E41477D990C3D3772032 /* YYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = YYWebImage/Cache/YYMemoryCache.h; sourceTree = "<group>"; };
 		51215040FA060D07697710C3B3A4140E /* YYWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageManager.h; path = YYWebImage/YYWebImageManager.h; sourceTree = "<group>"; };
 		523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B045F3A78274AA4149A4EABE28A6111 /* Pods_WXYZoomImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXYZoomImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		543CFC2F2563C16C9673F19E4364BFA5 /* Pods-WXYZoomImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CD69377C65A114D291DE69252170F5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624002866B86BF22F442CFD0364D65AF /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYWebImage/Image/YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		65C046BB8EAE918BCA3E8EDF166F7F8A /* YYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCache.m; path = YYWebImage/YYImageCache.m; sourceTree = "<group>"; };
+		65EC17FBEE7FB85BE2BB7580B2516654 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D1757AF267A7905209C901D2C3A363 /* Pods-WXYZoomImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXYZoomImage_Example-umbrella.h"; sourceTree = "<group>"; };
 		6CF1C394CA248A026AA471DB2EA3DB51 /* YYImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = YYWebImage/Image/YYImage.h; sourceTree = "<group>"; };
 		6D8297090367D46E1BFBEB8648C3E8A9 /* YYWebImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YYWebImage-Private.xcconfig"; sourceTree = "<group>"; };
-		74AA379A73C8E45975C67188BB7E9D14 /* WXYZoomImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXYZoomImage.h; sourceTree = "<group>"; };
+		6EF5EF8E9501B0B44D16ECBE16DD32A4 /* WXYZoomImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WXYZoomImage.m; sourceTree = "<group>"; };
+		728BCB6FADA63F1F5161039AEB8FCEE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76AAC13A8FD135C4EB9F88E2579C6C9A /* _YYWebImageSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _YYWebImageSetter.m; path = YYWebImage/Categories/_YYWebImageSetter.m; sourceTree = "<group>"; };
-		790613C792720E7FE67A9C5D4F48D0A1 /* WXYZoomImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXYZoomImageScrollView.h; sourceTree = "<group>"; };
 		7965A3883AE8B8842E8BF40B5441E879 /* YYWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E759836DB9669983F67B8993E96E5B /* MKAnnotationView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+YYWebImage.h"; path = "YYWebImage/Categories/MKAnnotationView+YYWebImage.h"; sourceTree = "<group>"; };
-		7C53C70595761AB83A35FFB7E8D9631F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE46A1BEFA5BFD3FAA90BD6F55E4B7C /* Pods_WXYZoomImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXYZoomImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AECF9D6BD08A929E8469A05F3704CE9 /* WXYZoomImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXYZoomImageManager.h; sourceTree = "<group>"; };
 		7D8DC0C8C83A2EE60A2ED395F244EF17 /* UIImageView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+YYWebImage.h"; path = "YYWebImage/Categories/UIImageView+YYWebImage.h"; sourceTree = "<group>"; };
-		7FA72D5202D815B33794463643702A61 /* Pods-WXYZoomImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		82DEA59F5BF7D2CC5F23A97BB100074A /* YYMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYMemoryCache.m; path = YYWebImage/Cache/YYMemoryCache.m; sourceTree = "<group>"; };
 		86E141629291E660E4BE4BA2DF03CE36 /* Pods-WXYZoomImage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXYZoomImage_Example-resources.sh"; sourceTree = "<group>"; };
-		893AA6FE558359A169218DE37A495E42 /* YYWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYWebImage-prefix.pch"; sourceTree = "<group>"; };
+		8A72654DAD775BB27DDF86F20BDA87DE /* YYWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YYWebImage.modulemap; sourceTree = "<group>"; };
+		90F236E90AA46C548AD765F689E4B57D /* YYWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYWebImage-prefix.pch"; sourceTree = "<group>"; };
 		9297CBD8B125E476C1D68639FB9B637A /* YYWebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageOperation.m; path = YYWebImage/YYWebImageOperation.m; sourceTree = "<group>"; };
 		92F6025438F4FA9DF26308E9BA87F7E0 /* CALayer+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+YYWebImage.h"; path = "YYWebImage/Categories/CALayer+YYWebImage.h"; sourceTree = "<group>"; };
 		942E4D9553B962552CB45E8C7FA16B7C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		96D504DD5E07874205D3671FCF6DC4DB /* Pods-WXYZoomImage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXYZoomImage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		99EC05EDD8B411F99414DE3A9055E665 /* WXYZoomImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WXYZoomImageManager.m; sourceTree = "<group>"; };
+		982A77FC87235937DF9DB726F1FFD0F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		9B1EDD0D8899B9311923E9FE2183385C /* YYFrameImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYFrameImage.h; path = YYWebImage/Image/YYFrameImage.h; sourceTree = "<group>"; };
 		9B935FABDD971BB379B61F4DA174435A /* _YYWebImageSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _YYWebImageSetter.h; path = YYWebImage/Categories/_YYWebImageSetter.h; sourceTree = "<group>"; };
 		9D788C6C2CDD9A628BE126575D988AFD /* YYWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYWebImage-dummy.m"; sourceTree = "<group>"; };
+		9E8E38592C950152B8CDA7D9BC08B24C /* Pods-WXYZoomImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9EB35C6CD1B015E92C8883661112187F /* YYAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAnimatedImageView.h; path = YYWebImage/Image/YYAnimatedImageView.h; sourceTree = "<group>"; };
 		A0A20C6E428971AB4BB1ABC09AE60F03 /* UIImageView+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+YYWebImage.m"; path = "YYWebImage/Categories/UIImageView+YYWebImage.m"; sourceTree = "<group>"; };
 		A4CE869C75D0ACD53EBDEC7847BB43BD /* YYKVStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKVStorage.m; path = YYWebImage/Cache/YYKVStorage.m; sourceTree = "<group>"; };
-		A8745581889501545263B00B3D78406A /* WXYZoomImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXYZoomImage-umbrella.h"; sourceTree = "<group>"; };
+		A501E64763BC054C70A66340488A6846 /* Pods-WXYZoomImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A683A80501B61DB5212D5DC8A34F151A /* WXYZoomImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXYZoomImage.h; sourceTree = "<group>"; };
+		ACA3CE778EF3BAF1FAC59923D981686B /* Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reachability-Private.xcconfig"; sourceTree = "<group>"; };
 		AD5408EB7FB14C17B8E43C16DF485187 /* YYCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCache.m; path = YYWebImage/Cache/YYCache.m; sourceTree = "<group>"; };
 		AF9B5F9FF795CCDCDDECB3F97943EF48 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAnimatedImageView.m; path = YYWebImage/Image/YYAnimatedImageView.m; sourceTree = "<group>"; };
 		B06DB58DA42113EBB479A97E00A70DC0 /* Pods-WXYZoomImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WXYZoomImage_Example.modulemap"; sourceTree = "<group>"; };
 		B0BC4C6119901FF48BEF738C18C3C672 /* YYWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageOperation.h; path = YYWebImage/YYWebImageOperation.h; sourceTree = "<group>"; };
-		B437DF16C0D54EB88C7524CAE8D943BD /* Pods-WXYZoomImage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXYZoomImage_Tests-dummy.m"; sourceTree = "<group>"; };
+		B0F85E5D502B949F7AB9A8DE808B1681 /* WXYZoomImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WXYZoomImageManager.m; sourceTree = "<group>"; };
+		B3C9CBF464D9EF2D41960BD625BB13B0 /* Pods-WXYZoomImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXYZoomImage_Example-dummy.m"; sourceTree = "<group>"; };
 		B7BF01013C1DF6D27900C371C0B21386 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		B8DA18D1A2536DB885A1217A7CEE05C2 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSpriteSheetImage.m; path = YYWebImage/Image/YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WXYZoomImage-Private.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBA1B334D1414F2B70EEDEEF9A08CCCE /* Pods-WXYZoomImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXYZoomImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BC0F566DAC0FFB8EBBD3D87C894B18A5 /* Pods-WXYZoomImage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXYZoomImage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BC418854231EFD7202093AD918AC319B /* Pods-WXYZoomImage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WXYZoomImage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF8C20F5A079C3C3A8B235782B3E4596 /* Pods-WXYZoomImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXYZoomImage_Example-umbrella.h"; sourceTree = "<group>"; };
+		BE61450187DDBD7D160DE31747B45F8C /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
 		C19B5FB60249E1548833409645B2695F /* WXYZoomImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXYZoomImage.xcconfig; sourceTree = "<group>"; };
-		C9316B2C5D30DB33904C4EB7093CA9AC /* WXYZoomImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXYZoomImageManager.h; sourceTree = "<group>"; };
+		C8EB3F4993FB35BF1EAA2FD200A42A02 /* Pods-WXYZoomImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXYZoomImage_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D25C3DD684E5A546C9F0CA3DF4F84D7A /* UIImage+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYWebImage.m"; path = "YYWebImage/Categories/UIImage+YYWebImage.m"; sourceTree = "<group>"; };
+		D3B8B18A7A6F3AF587BD4F6EE9ADB9D7 /* Pods_WXYZoomImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXYZoomImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B49721CEA9D7B1B06CE8A4CD5EA72B /* YYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = YYWebImage/Cache/YYDiskCache.h; sourceTree = "<group>"; };
 		D4C9D0C7E0E4F576965E16B3D0CC8B47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D6E2D4B19E64A02E854763727F0FC7D0 /* YYKVStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKVStorage.h; path = YYWebImage/Cache/YYKVStorage.h; sourceTree = "<group>"; };
+		D995D7D49CBC526FB9BA4E6AD3BE60CD /* YYWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC068CB8A19DAD1A04803DA36C4ED716 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E28FEE5929B59FD1CDCD522333759BD0 /* YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImage.h; path = YYWebImage/YYWebImage.h; sourceTree = "<group>"; };
+		E2E61F9D1E15602E3BA8F1C800313572 /* Reachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-umbrella.h"; sourceTree = "<group>"; };
 		E764CFAAA7890AA6B3E8A6DED00D9E89 /* WXYZoomImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXYZoomImage-prefix.pch"; sourceTree = "<group>"; };
 		E977867F326B08936E6F1A18E2768B5F /* YYWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYWebImage-umbrella.h"; sourceTree = "<group>"; };
 		EDCDCAB8DDB32615C87FA253DA855BDF /* Pods-WXYZoomImage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WXYZoomImage_Tests.modulemap"; sourceTree = "<group>"; };
 		EE5EA44DD20AC7E26FDF02934315CC33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F1BBA9D422228CA0EE4F9EAA6717AB5E /* Pods_WXYZoomImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXYZoomImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5BA37BB27B22284E6426C74AA116E99 /* WXYZoomImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXYZoomImage-dummy.m"; sourceTree = "<group>"; };
 		F72B1C1E5A30AACDB556902C1C42A967 /* MKAnnotationView+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+YYWebImage.m"; path = "YYWebImage/Categories/MKAnnotationView+YYWebImage.m"; sourceTree = "<group>"; };
+		FA047188B9AE8C7D1832A83DB61A5130 /* WXYZoomImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXYZoomImage-umbrella.h"; sourceTree = "<group>"; };
 		FAEBC95FDAB7D85E315971D7382E4229 /* UIButton+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+YYWebImage.m"; path = "YYWebImage/Categories/UIButton+YYWebImage.m"; sourceTree = "<group>"; };
+		FE8FF49BBDA90587DCD1C117879BE102 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D07E21812EC9DAC8D4ADD5DBAABA456 /* Frameworks */ = {
+		117479E065D24C165D0D89D2EFA4523D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7262BC0D7313C258840997C4FF497C32 /* Foundation.framework in Frameworks */,
+				505F9D17A435D6ABB1C467B63ABEED0F /* Foundation.framework in Frameworks */,
+				1372AAD15EEE4158EFC18B65080DBEB6 /* Reachability.framework in Frameworks */,
+				BC1877006E31723EA17874F6499B530A /* UIKit.framework in Frameworks */,
+				9B0DA2992CC9014792D18745C9D43437 /* YYWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D60295C7D785D00FD89FA1C384282C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918EE93CD7A1C3FCDC83506F27B4D572 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +279,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1EBA2633438685C834FCCC4676F103C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508AFC65AC5B05E2D9B05142F3AC0152 /* Foundation.framework in Frameworks */,
+				95D1A10AF3371C5DCB23AF8B79356C54 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,28 +306,225 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6D8AFF7726617A82B5D9618F59DCB40 /* Frameworks */ = {
+		F1C30B7FB3C622ED5BE2A485039F65DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17350D685345E1860927938CA62D21E /* Foundation.framework in Frameworks */,
-				C5258D73707145BC967E7542B1009A7B /* UIKit.framework in Frameworks */,
-				43FEDCBA9310F5FDF05AA45EC78A2CF5 /* YYWebImage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F29112BE62EB43E93099A6F207A6E7EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A190FE78045FD7CDB1A1959115D6BA3 /* Foundation.framework in Frameworks */,
+				CFE44D68B01F81A469714CA3B39C2D36 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		068B7F0A09C4FD5A2798A7D72E261615 /* YYWebImage */ = {
+		060245D56A142C9BD22E24EBC893B833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40343FB397FD66BA42F989C006A3DD76 /* Reachability */,
+				D77CFC402292F670E257844F12E7F47A /* YYWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		194F16D5E0DCF579CF687BE9043E4F6D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				446CE290F8705FF3B39CD9DF722DE6DE /* WXYZoomImage */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1A5A42AE9B03CD93177D9E3300CC65D5 /* WXYZoomImage */ = {
+			isa = PBXGroup;
+			children = (
+				714DDA336DF240F230B267F96C1D6AE8 /* Classes */,
+			);
+			path = WXYZoomImage;
+			sourceTree = "<group>";
+		};
+		239D3FD061C384F9519BB515144B1534 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AAA3932FA00CDF7733947EF7CCDAB7F /* Pods-WXYZoomImage_Example */,
+				C7C8AB3437A26A2A99FF63CD54F3785A /* Pods-WXYZoomImage_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		40343FB397FD66BA42F989C006A3DD76 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				0572EBE655074A72E501427D7CF3C1F6 /* Reachability.h */,
+				DC068CB8A19DAD1A04803DA36C4ED716 /* Reachability.m */,
+				462E52484C1C271A20A06CB9BFE941B3 /* Support Files */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		446CE290F8705FF3B39CD9DF722DE6DE /* WXYZoomImage */ = {
+			isa = PBXGroup;
+			children = (
+				A575583AE5D460E47F194059EDE577D6 /* Support Files */,
+				1A5A42AE9B03CD93177D9E3300CC65D5 /* WXYZoomImage */,
+			);
+			name = WXYZoomImage;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		462E52484C1C271A20A06CB9BFE941B3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE8FF49BBDA90587DCD1C117879BE102 /* Info.plist */,
+				4C5D425BDFCE2725BCE83ECBFAB91298 /* Reachability.modulemap */,
+				2793168C6FAB71956EBB94EB89ACB4C1 /* Reachability.xcconfig */,
+				ACA3CE778EF3BAF1FAC59923D981686B /* Reachability-Private.xcconfig */,
+				2F0067A1F5470D091155980C2FD458C2 /* Reachability-dummy.m */,
+				BE61450187DDBD7D160DE31747B45F8C /* Reachability-prefix.pch */,
+				E2E61F9D1E15602E3BA8F1C800313572 /* Reachability-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reachability";
+			sourceTree = "<group>";
+		};
+		4AAA3932FA00CDF7733947EF7CCDAB7F /* Pods-WXYZoomImage_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5CD69377C65A114D291DE69252170F5E /* Info.plist */,
+				B06DB58DA42113EBB479A97E00A70DC0 /* Pods-WXYZoomImage_Example.modulemap */,
+				BC418854231EFD7202093AD918AC319B /* Pods-WXYZoomImage_Example-acknowledgements.markdown */,
+				BC0F566DAC0FFB8EBBD3D87C894B18A5 /* Pods-WXYZoomImage_Example-acknowledgements.plist */,
+				B3C9CBF464D9EF2D41960BD625BB13B0 /* Pods-WXYZoomImage_Example-dummy.m */,
+				02BB524AE209DCA3185582CE324A9A54 /* Pods-WXYZoomImage_Example-frameworks.sh */,
+				86E141629291E660E4BE4BA2DF03CE36 /* Pods-WXYZoomImage_Example-resources.sh */,
+				69D1757AF267A7905209C901D2C3A363 /* Pods-WXYZoomImage_Example-umbrella.h */,
+				33C7DCCBA09D085F439C8EC30D66FC4A /* Pods-WXYZoomImage_Example.debug.xcconfig */,
+				A501E64763BC054C70A66340488A6846 /* Pods-WXYZoomImage_Example.release.xcconfig */,
+			);
+			name = "Pods-WXYZoomImage_Example";
+			path = "Target Support Files/Pods-WXYZoomImage_Example";
+			sourceTree = "<group>";
+		};
+		5646321F1334281479C3F97C1DE9EEC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A4455A2BE37803DEDD23D40CC6F86B /* WebP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D4B504F88D1D628CA723A6DFC74B745 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				058F28BFD16C91F35D56DB6A821FE6B9 /* Accelerate.framework */,
+				431C0A8F2AEF8ED89D7B10E274167420 /* AssetsLibrary.framework */,
+				B7BF01013C1DF6D27900C371C0B21386 /* CoreFoundation.framework */,
+				523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */,
+				32EB237DD9D97536F139872C0D3CB1EF /* ImageIO.framework */,
+				942E4D9553B962552CB45E8C7FA16B7C /* MobileCoreServices.framework */,
+				D4C9D0C7E0E4F576965E16B3D0CC8B47 /* QuartzCore.framework */,
+				982A77FC87235937DF9DB726F1FFD0F2 /* SystemConfiguration.framework */,
+				EE5EA44DD20AC7E26FDF02934315CC33 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6951792D85D9E2F1B6D5F5C1EFB72761 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				728BCB6FADA63F1F5161039AEB8FCEE0 /* Info.plist */,
+				8A72654DAD775BB27DDF86F20BDA87DE /* YYWebImage.modulemap */,
+				06DDCC36878EADA44295E44DBB4007A0 /* YYWebImage.xcconfig */,
+				6D8297090367D46E1BFBEB8648C3E8A9 /* YYWebImage-Private.xcconfig */,
+				9D788C6C2CDD9A628BE126575D988AFD /* YYWebImage-dummy.m */,
+				90F236E90AA46C548AD765F689E4B57D /* YYWebImage-prefix.pch */,
+				E977867F326B08936E6F1A18E2768B5F /* YYWebImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYWebImage";
+			sourceTree = "<group>";
+		};
+		714DDA336DF240F230B267F96C1D6AE8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A683A80501B61DB5212D5DC8A34F151A /* WXYZoomImage.h */,
+				6EF5EF8E9501B0B44D16ECBE16DD32A4 /* WXYZoomImage.m */,
+				7AECF9D6BD08A929E8469A05F3704CE9 /* WXYZoomImageManager.h */,
+				B0F85E5D502B949F7AB9A8DE808B1681 /* WXYZoomImageManager.m */,
+				48FE97451D39A8B4E2850970CD7240B5 /* WXYZoomImageScrollView.h */,
+				24959BEADCFD4077852ABF7F5E8E6ECF /* WXYZoomImageScrollView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		715382A9B2F55FC0B929A2124B768FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65EC17FBEE7FB85BE2BB7580B2516654 /* Reachability.framework */,
+				D995D7D49CBC526FB9BA4E6AD3BE60CD /* YYWebImage.framework */,
+				5D4B504F88D1D628CA723A6DFC74B745 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				194F16D5E0DCF579CF687BE9043E4F6D /* Development Pods */,
+				715382A9B2F55FC0B929A2124B768FAD /* Frameworks */,
+				060245D56A142C9BD22E24EBC893B833 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				239D3FD061C384F9519BB515144B1534 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A575583AE5D460E47F194059EDE577D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AD01F12911F1AAC5D3776E35AC44226 /* Info.plist */,
+				466D5C00F7AA22692197C7EB0DAE96ED /* WXYZoomImage.modulemap */,
+				C19B5FB60249E1548833409645B2695F /* WXYZoomImage.xcconfig */,
+				B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */,
+				23D283433C6A497BB74D6F4263CD2F58 /* WXYZoomImage-dummy.m */,
+				E764CFAAA7890AA6B3E8A6DED00D9E89 /* WXYZoomImage-prefix.pch */,
+				FA047188B9AE8C7D1832A83DB61A5130 /* WXYZoomImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WXYZoomImage";
+			sourceTree = "<group>";
+		};
+		C7C8AB3437A26A2A99FF63CD54F3785A /* Pods-WXYZoomImage_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				043BC185D6513AA847405CE7F62507B8 /* Info.plist */,
+				EDCDCAB8DDB32615C87FA253DA855BDF /* Pods-WXYZoomImage_Tests.modulemap */,
+				2F0B3367EFD0C28F79A9B9E7F341B514 /* Pods-WXYZoomImage_Tests-acknowledgements.markdown */,
+				96D504DD5E07874205D3671FCF6DC4DB /* Pods-WXYZoomImage_Tests-acknowledgements.plist */,
+				3A220578A160A50B224E07D49833657D /* Pods-WXYZoomImage_Tests-dummy.m */,
+				1383782DB55B63B72C0F94BA2E496963 /* Pods-WXYZoomImage_Tests-frameworks.sh */,
+				4C98734A1D9396467D9585D43D7CBA23 /* Pods-WXYZoomImage_Tests-resources.sh */,
+				C8EB3F4993FB35BF1EAA2FD200A42A02 /* Pods-WXYZoomImage_Tests-umbrella.h */,
+				543CFC2F2563C16C9673F19E4364BFA5 /* Pods-WXYZoomImage_Tests.debug.xcconfig */,
+				9E8E38592C950152B8CDA7D9BC08B24C /* Pods-WXYZoomImage_Tests.release.xcconfig */,
+			);
+			name = "Pods-WXYZoomImage_Tests";
+			path = "Target Support Files/Pods-WXYZoomImage_Tests";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE46A1BEFA5BFD3FAA90BD6F55E4B7C /* Pods_WXYZoomImage_Example.framework */,
+				D3B8B18A7A6F3AF587BD4F6EE9ADB9D7 /* Pods_WXYZoomImage_Tests.framework */,
+				28DC28AB107E22447E7C4E38521C671E /* Reachability.framework */,
+				2CA72E9F30AD7B46748CFAA1F43D450D /* WXYZoomImage.bundle */,
+				3C8304D4527764F643129813844FFDD0 /* WXYZoomImage.framework */,
+				7965A3883AE8B8842E8BF40B5441E879 /* YYWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D77CFC402292F670E257844F12E7F47A /* YYWebImage */ = {
 			isa = PBXGroup;
 			children = (
 				92F6025438F4FA9DF26308E9BA87F7E0 /* CALayer+YYWebImage.h */,
@@ -307,198 +564,32 @@
 				9297CBD8B125E476C1D68639FB9B637A /* YYWebImageOperation.m */,
 				9B935FABDD971BB379B61F4DA174435A /* _YYWebImageSetter.h */,
 				76AAC13A8FD135C4EB9F88E2579C6C9A /* _YYWebImageSetter.m */,
-				BBEDA8D509B27FE45F4DCFBFDEFC5E6C /* Frameworks */,
-				91440A7FA4CF7F79BD7CCEBB282E7AE2 /* Support Files */,
+				5646321F1334281479C3F97C1DE9EEC1 /* Frameworks */,
+				6951792D85D9E2F1B6D5F5C1EFB72761 /* Support Files */,
 			);
 			path = YYWebImage;
-			sourceTree = "<group>";
-		};
-		194F16D5E0DCF579CF687BE9043E4F6D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				446CE290F8705FF3B39CD9DF722DE6DE /* WXYZoomImage */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1A5A42AE9B03CD93177D9E3300CC65D5 /* WXYZoomImage */ = {
-			isa = PBXGroup;
-			children = (
-				714DDA336DF240F230B267F96C1D6AE8 /* Classes */,
-			);
-			path = WXYZoomImage;
-			sourceTree = "<group>";
-		};
-		239D3FD061C384F9519BB515144B1534 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4AAA3932FA00CDF7733947EF7CCDAB7F /* Pods-WXYZoomImage_Example */,
-				C7C8AB3437A26A2A99FF63CD54F3785A /* Pods-WXYZoomImage_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		446CE290F8705FF3B39CD9DF722DE6DE /* WXYZoomImage */ = {
-			isa = PBXGroup;
-			children = (
-				A575583AE5D460E47F194059EDE577D6 /* Support Files */,
-				1A5A42AE9B03CD93177D9E3300CC65D5 /* WXYZoomImage */,
-			);
-			name = WXYZoomImage;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		4AAA3932FA00CDF7733947EF7CCDAB7F /* Pods-WXYZoomImage_Example */ = {
-			isa = PBXGroup;
-			children = (
-				5CD69377C65A114D291DE69252170F5E /* Info.plist */,
-				B06DB58DA42113EBB479A97E00A70DC0 /* Pods-WXYZoomImage_Example.modulemap */,
-				BC418854231EFD7202093AD918AC319B /* Pods-WXYZoomImage_Example-acknowledgements.markdown */,
-				BC0F566DAC0FFB8EBBD3D87C894B18A5 /* Pods-WXYZoomImage_Example-acknowledgements.plist */,
-				1D1F9978D8F76D7C2607F0BEE746CFDF /* Pods-WXYZoomImage_Example-dummy.m */,
-				02BB524AE209DCA3185582CE324A9A54 /* Pods-WXYZoomImage_Example-frameworks.sh */,
-				86E141629291E660E4BE4BA2DF03CE36 /* Pods-WXYZoomImage_Example-resources.sh */,
-				BF8C20F5A079C3C3A8B235782B3E4596 /* Pods-WXYZoomImage_Example-umbrella.h */,
-				BBA1B334D1414F2B70EEDEEF9A08CCCE /* Pods-WXYZoomImage_Example.debug.xcconfig */,
-				166D141DE33789B179DF08D81718EFD8 /* Pods-WXYZoomImage_Example.release.xcconfig */,
-			);
-			name = "Pods-WXYZoomImage_Example";
-			path = "Target Support Files/Pods-WXYZoomImage_Example";
-			sourceTree = "<group>";
-		};
-		515265DD99B1E0380D8D709FBD11667C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2556FDB918506D2EFEE1057D00F1DCDD /* YYWebImage.framework */,
-				8F2206595B46C73A95DFF09FDD6E4979 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		714DDA336DF240F230B267F96C1D6AE8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				74AA379A73C8E45975C67188BB7E9D14 /* WXYZoomImage.h */,
-				4A0DCD2CA938EE68DB355BF03F9F3FF7 /* WXYZoomImage.m */,
-				C9316B2C5D30DB33904C4EB7093CA9AC /* WXYZoomImageManager.h */,
-				99EC05EDD8B411F99414DE3A9055E665 /* WXYZoomImageManager.m */,
-				790613C792720E7FE67A9C5D4F48D0A1 /* WXYZoomImageScrollView.h */,
-				4814CA1095ACE46E1B35AF339BB2FAE0 /* WXYZoomImageScrollView.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				194F16D5E0DCF579CF687BE9043E4F6D /* Development Pods */,
-				515265DD99B1E0380D8D709FBD11667C /* Frameworks */,
-				D2FA91EC5BE36CFD9699E68BDCD9C2E6 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				239D3FD061C384F9519BB515144B1534 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8F2206595B46C73A95DFF09FDD6E4979 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				058F28BFD16C91F35D56DB6A821FE6B9 /* Accelerate.framework */,
-				431C0A8F2AEF8ED89D7B10E274167420 /* AssetsLibrary.framework */,
-				B7BF01013C1DF6D27900C371C0B21386 /* CoreFoundation.framework */,
-				523EB9118D0D634CC448805704D8E8EF /* Foundation.framework */,
-				32EB237DD9D97536F139872C0D3CB1EF /* ImageIO.framework */,
-				942E4D9553B962552CB45E8C7FA16B7C /* MobileCoreServices.framework */,
-				D4C9D0C7E0E4F576965E16B3D0CC8B47 /* QuartzCore.framework */,
-				EE5EA44DD20AC7E26FDF02934315CC33 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		91440A7FA4CF7F79BD7CCEBB282E7AE2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7C53C70595761AB83A35FFB7E8D9631F /* Info.plist */,
-				4C4136219866C2366D30E43D5F0E80E6 /* YYWebImage.modulemap */,
-				1E573BB01855BF0BE77852F911A7C18F /* YYWebImage.xcconfig */,
-				6D8297090367D46E1BFBEB8648C3E8A9 /* YYWebImage-Private.xcconfig */,
-				9D788C6C2CDD9A628BE126575D988AFD /* YYWebImage-dummy.m */,
-				893AA6FE558359A169218DE37A495E42 /* YYWebImage-prefix.pch */,
-				E977867F326B08936E6F1A18E2768B5F /* YYWebImage-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YYWebImage";
-			sourceTree = "<group>";
-		};
-		A575583AE5D460E47F194059EDE577D6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0AD01F12911F1AAC5D3776E35AC44226 /* Info.plist */,
-				466D5C00F7AA22692197C7EB0DAE96ED /* WXYZoomImage.modulemap */,
-				C19B5FB60249E1548833409645B2695F /* WXYZoomImage.xcconfig */,
-				B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */,
-				F5BA37BB27B22284E6426C74AA116E99 /* WXYZoomImage-dummy.m */,
-				E764CFAAA7890AA6B3E8A6DED00D9E89 /* WXYZoomImage-prefix.pch */,
-				A8745581889501545263B00B3D78406A /* WXYZoomImage-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WXYZoomImage";
-			sourceTree = "<group>";
-		};
-		BBEDA8D509B27FE45F4DCFBFDEFC5E6C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				498D2ECC09A5C10FDCB8645DF72DB344 /* WebP.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7C8AB3437A26A2A99FF63CD54F3785A /* Pods-WXYZoomImage_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				043BC185D6513AA847405CE7F62507B8 /* Info.plist */,
-				EDCDCAB8DDB32615C87FA253DA855BDF /* Pods-WXYZoomImage_Tests.modulemap */,
-				2F0B3367EFD0C28F79A9B9E7F341B514 /* Pods-WXYZoomImage_Tests-acknowledgements.markdown */,
-				96D504DD5E07874205D3671FCF6DC4DB /* Pods-WXYZoomImage_Tests-acknowledgements.plist */,
-				B437DF16C0D54EB88C7524CAE8D943BD /* Pods-WXYZoomImage_Tests-dummy.m */,
-				1383782DB55B63B72C0F94BA2E496963 /* Pods-WXYZoomImage_Tests-frameworks.sh */,
-				4C98734A1D9396467D9585D43D7CBA23 /* Pods-WXYZoomImage_Tests-resources.sh */,
-				03DF05F2DAC423097E4AB67D442428A1 /* Pods-WXYZoomImage_Tests-umbrella.h */,
-				4D84A75D7EC766BA9A77BCBCF7AB0B24 /* Pods-WXYZoomImage_Tests.debug.xcconfig */,
-				7FA72D5202D815B33794463643702A61 /* Pods-WXYZoomImage_Tests.release.xcconfig */,
-			);
-			name = "Pods-WXYZoomImage_Tests";
-			path = "Target Support Files/Pods-WXYZoomImage_Tests";
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F1BBA9D422228CA0EE4F9EAA6717AB5E /* Pods_WXYZoomImage_Example.framework */,
-				5B045F3A78274AA4149A4EABE28A6111 /* Pods_WXYZoomImage_Tests.framework */,
-				2CA72E9F30AD7B46748CFAA1F43D450D /* WXYZoomImage.bundle */,
-				45F998C419D85C5E01A6CD214AA7E766 /* WXYZoomImage.framework */,
-				7965A3883AE8B8842E8BF40B5441E879 /* YYWebImage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D2FA91EC5BE36CFD9699E68BDCD9C2E6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				068B7F0A09C4FD5A2798A7D72E261615 /* YYWebImage */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		391D455A46BDD6D8CAFA5DC925094BF2 /* Headers */ = {
+		466BAD85EEC10F1CF2AF4EDB1A34A795 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				876B939F195B961423D04E3B6A453D82 /* Pods-WXYZoomImage_Tests-umbrella.h in Headers */,
+				0AA7A73949348A3330121C8590BDADA7 /* Reachability-umbrella.h in Headers */,
+				447B5B825E8BC97BB122FEF9CF8F81F3 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3CE8CAF8C75C1E936CA8DE5AD43DDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A61003F1DC2EDE51C41D3B30694595 /* WXYZoomImage-umbrella.h in Headers */,
+				73846784AC9E3145CCAB3B51F400BCE4 /* WXYZoomImage.h in Headers */,
+				65095B2CF74E1C3DA3D32210C3A4E4F9 /* WXYZoomImageManager.h in Headers */,
+				46A6052978DDA2A80A8F00906ECB789D /* WXYZoomImageScrollView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,84 +620,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DC8A6BF47B5178D353E66A49AC3B064 /* Headers */ = {
+		A248C0F9825CDE39F5D16DAADACA872F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B059D2EAE65FB427765DFD60A9453F72 /* WXYZoomImage-umbrella.h in Headers */,
-				DC405B131183E2A4BA022EE237917BC4 /* WXYZoomImage.h in Headers */,
-				301C215E26B25FAF536FEB91E2431F4E /* WXYZoomImageManager.h in Headers */,
-				1C2FA5278AFC068D7B7222D49C001B90 /* WXYZoomImageScrollView.h in Headers */,
+				F9F32D5A07EFB977393EE703DCF1ECD6 /* Pods-WXYZoomImage_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93D92326A86B444F4CB668333E49BDAB /* Headers */ = {
+		DD87BE684E2B9880E1D0F541F5DB02BA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7829621E52FA608703C9A9FE056FC260 /* Pods-WXYZoomImage_Example-umbrella.h in Headers */,
+				FA0F3B76EE04902168B4504263D832D8 /* Pods-WXYZoomImage_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5EF88AF7CD8E8068602C9191F668CDE6 /* Pods-WXYZoomImage_Tests */ = {
+		25D4A525D2F4554367C12E81688D4A09 /* WXYZoomImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CF3698A7BCCBCB310091FFF7D10124C /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Tests" */;
+			buildConfigurationList = CDAF999C9A0A1E01762D6717D0AF230D /* Build configuration list for PBXNativeTarget "WXYZoomImage" */;
 			buildPhases = (
-				3D9E18C9A2CCC7876EFD19D74A8DBC0F /* Sources */,
-				F29112BE62EB43E93099A6F207A6E7EC /* Frameworks */,
-				391D455A46BDD6D8CAFA5DC925094BF2 /* Headers */,
+				CD4082CCF555C05BBD959334BBC01828 /* Sources */,
+				117479E065D24C165D0D89D2EFA4523D /* Frameworks */,
+				78BB12E02041E7DC7A4035049C783CE0 /* Resources */,
+				4B3CE8CAF8C75C1E936CA8DE5AD43DDD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				78ABE9C4D0AE62A6C103D1EE79AEFEC8 /* PBXTargetDependency */,
-				DBE654A9B1F1E99F55EDF1897D5364A8 /* PBXTargetDependency */,
-			);
-			name = "Pods-WXYZoomImage_Tests";
-			productName = "Pods-WXYZoomImage_Tests";
-			productReference = 5B045F3A78274AA4149A4EABE28A6111 /* Pods_WXYZoomImage_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		85A28DFFB5122FDFB13C3AC49A0F2485 /* WXYZoomImage */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A3C6D73558401AEE8171D061FD30B40 /* Build configuration list for PBXNativeTarget "WXYZoomImage" */;
-			buildPhases = (
-				10B31C5C02D2D1AC47AC064407C81DFB /* Sources */,
-				D6D8AFF7726617A82B5D9618F59DCB40 /* Frameworks */,
-				26573CE1CAE9E83480498E5DB77167E1 /* Resources */,
-				8DC8A6BF47B5178D353E66A49AC3B064 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87393FAEB65BE538EFA6633103FF1360 /* PBXTargetDependency */,
-				D4E617D672F30C61CEE77DE304E5B3EC /* PBXTargetDependency */,
+				02B749650760B9A0D3413CBEC2D5E368 /* PBXTargetDependency */,
+				3857BE61559BC9796F74EDD7BD45FA59 /* PBXTargetDependency */,
+				3D18F2733ED189B7D32412AD8BCF10E3 /* PBXTargetDependency */,
 			);
 			name = WXYZoomImage;
 			productName = WXYZoomImage;
-			productReference = 45F998C419D85C5E01A6CD214AA7E766 /* WXYZoomImage.framework */;
+			productReference = 3C8304D4527764F643129813844FFDD0 /* WXYZoomImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AC70DD4099A7271281CA8B3BBBC21402 /* Pods-WXYZoomImage_Example */ = {
+		677842BD183903662859DF1ADFBAE4F3 /* Pods-WXYZoomImage_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0362CE45D254A20D4610EA5A90F84C67 /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Example" */;
+			buildConfigurationList = 6FD7CBB962CC5E89BABD4A56F826024F /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Tests" */;
 			buildPhases = (
-				7793E558C5A4EAE91457976C0947D177 /* Sources */,
-				1D07E21812EC9DAC8D4ADD5DBAABA456 /* Frameworks */,
-				93D92326A86B444F4CB668333E49BDAB /* Headers */,
+				84250DEAF221EC5C7ABECB3B96DE1033 /* Sources */,
+				F1C30B7FB3C622ED5BE2A485039F65DB /* Frameworks */,
+				DD87BE684E2B9880E1D0F541F5DB02BA /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				672F9FED632EDA669F0EB89160893750 /* PBXTargetDependency */,
-				633A92BEA4D243B5196E4560A8185790 /* PBXTargetDependency */,
+				8D7C71C28D224780122A4EF24DDBE38D /* PBXTargetDependency */,
+				5B3029334CB194CF4647F02E0D9FD2D1 /* PBXTargetDependency */,
+				9A65667886ADDA3F3A2696CA7C5FBEBA /* PBXTargetDependency */,
 			);
-			name = "Pods-WXYZoomImage_Example";
-			productName = "Pods-WXYZoomImage_Example";
-			productReference = F1BBA9D422228CA0EE4F9EAA6717AB5E /* Pods_WXYZoomImage_Example.framework */;
+			name = "Pods-WXYZoomImage_Tests";
+			productName = "Pods-WXYZoomImage_Tests";
+			productReference = D3B8B18A7A6F3AF587BD4F6EE9ADB9D7 /* Pods_WXYZoomImage_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D3C42AFB698BA08B779BDACE53E069F7 /* YYWebImage */ = {
@@ -643,6 +714,43 @@
 			productReference = 2CA72E9F30AD7B46748CFAA1F43D450D /* WXYZoomImage.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		DCED51B978B3205EFCB0A9D541CF1F22 /* Pods-WXYZoomImage_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE7DBBDBD66926F7163A1C8B78D2DEB /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Example" */;
+			buildPhases = (
+				D9FBCFD8280D21682D4393C8E5655B05 /* Sources */,
+				5D60295C7D785D00FD89FA1C384282C6 /* Frameworks */,
+				A248C0F9825CDE39F5D16DAADACA872F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF06F244D66C22BA8B6BFDDEE06D8B7 /* PBXTargetDependency */,
+				CDF8060E556F4810A2902775FE635A6F /* PBXTargetDependency */,
+				69C7D7800A1D33AB1D5B733DA9F3D694 /* PBXTargetDependency */,
+			);
+			name = "Pods-WXYZoomImage_Example";
+			productName = "Pods-WXYZoomImage_Example";
+			productReference = 7AE46A1BEFA5BFD3FAA90BD6F55E4B7C /* Pods_WXYZoomImage_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E01BC1BE8376000D08331E0AF1526257 /* Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8699F004A72155447BB9EA471430AC6C /* Build configuration list for PBXNativeTarget "Reachability" */;
+			buildPhases = (
+				2C68639A5A22E15D4BCA41D06E8D1DFC /* Sources */,
+				B1EBA2633438685C834FCCC4676F103C /* Frameworks */,
+				466BAD85EEC10F1CF2AF4EDB1A34A795 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reachability;
+			productName = Reachability;
+			productReference = 28DC28AB107E22447E7C4E38521C671E /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -664,9 +772,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC70DD4099A7271281CA8B3BBBC21402 /* Pods-WXYZoomImage_Example */,
-				5EF88AF7CD8E8068602C9191F668CDE6 /* Pods-WXYZoomImage_Tests */,
-				85A28DFFB5122FDFB13C3AC49A0F2485 /* WXYZoomImage */,
+				DCED51B978B3205EFCB0A9D541CF1F22 /* Pods-WXYZoomImage_Example */,
+				677842BD183903662859DF1ADFBAE4F3 /* Pods-WXYZoomImage_Tests */,
+				E01BC1BE8376000D08331E0AF1526257 /* Reachability */,
+				25D4A525D2F4554367C12E81688D4A09 /* WXYZoomImage */,
 				D85A920C35715A6BCA77639F3A04FC66 /* WXYZoomImage-WXYZoomImage */,
 				D3C42AFB698BA08B779BDACE53E069F7 /* YYWebImage */,
 			);
@@ -674,11 +783,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		26573CE1CAE9E83480498E5DB77167E1 /* Resources */ = {
+		78BB12E02041E7DC7A4035049C783CE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CCC36095FD22CF7FA8872B564A198E8 /* WXYZoomImage.bundle in Resources */,
+				CF9B68E13B50E9879DCAB44F57280131 /* WXYZoomImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,30 +801,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		10B31C5C02D2D1AC47AC064407C81DFB /* Sources */ = {
+		2C68639A5A22E15D4BCA41D06E8D1DFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CCF64912647B6122D4B0F92E677A0A1 /* WXYZoomImage-dummy.m in Sources */,
-				D2A18D2EC98EFAD0BF584FEF64F04199 /* WXYZoomImage.m in Sources */,
-				884630A42425721AA3174BD57BB55B61 /* WXYZoomImageManager.m in Sources */,
-				172E7D4ED9CB64A54D01139A3EE587FB /* WXYZoomImageScrollView.m in Sources */,
+				FCC50A138B6081A87D473F3FC820EC64 /* Reachability-dummy.m in Sources */,
+				D6904C8764D28642E4D543881C5DFDA6 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9E18C9A2CCC7876EFD19D74A8DBC0F /* Sources */ = {
+		84250DEAF221EC5C7ABECB3B96DE1033 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7E0FE036E58F69A4CD9B01980853FF /* Pods-WXYZoomImage_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7793E558C5A4EAE91457976C0947D177 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87340F89B7FC932A3FA05A304BA8EB03 /* Pods-WXYZoomImage_Example-dummy.m in Sources */,
+				CFE739980D4745AB668BB9CB0D17ADF2 /* Pods-WXYZoomImage_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +844,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD4082CCF555C05BBD959334BBC01828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C823DC446A10D003901E16C734B0BAB9 /* WXYZoomImage-dummy.m in Sources */,
+				52C8F903C2C7F8AFE2DDC6A7CEB56B59 /* WXYZoomImage.m in Sources */,
+				099487D1D6FF4E7BAFDCB9DB66EFA57C /* WXYZoomImageManager.m in Sources */,
+				CEE1EF44A1B4EA720837E78E6682B8E0 /* WXYZoomImageScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9033CC98B0D387EB9439BA5848A00B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -752,51 +862,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9FBCFD8280D21682D4393C8E5655B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B826618693B16061705148B87E3ACB7E /* Pods-WXYZoomImage_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		633A92BEA4D243B5196E4560A8185790 /* PBXTargetDependency */ = {
+		02B749650760B9A0D3413CBEC2D5E368 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YYWebImage;
-			target = D3C42AFB698BA08B779BDACE53E069F7 /* YYWebImage */;
-			targetProxy = 6BB917BFC0CCC0F5B503F9021E1A4068 /* PBXContainerItemProxy */;
+			name = Reachability;
+			target = E01BC1BE8376000D08331E0AF1526257 /* Reachability */;
+			targetProxy = F0DE5B102932C90AC7F48943CDBDAF69 /* PBXContainerItemProxy */;
 		};
-		672F9FED632EDA669F0EB89160893750 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WXYZoomImage;
-			target = 85A28DFFB5122FDFB13C3AC49A0F2485 /* WXYZoomImage */;
-			targetProxy = DFB6AD723DCB804E6AD2F35A9FD8BA8F /* PBXContainerItemProxy */;
-		};
-		78ABE9C4D0AE62A6C103D1EE79AEFEC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WXYZoomImage;
-			target = 85A28DFFB5122FDFB13C3AC49A0F2485 /* WXYZoomImage */;
-			targetProxy = 831EBFD87461F26DE2BBEFE928DED623 /* PBXContainerItemProxy */;
-		};
-		87393FAEB65BE538EFA6633103FF1360 /* PBXTargetDependency */ = {
+		3857BE61559BC9796F74EDD7BD45FA59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "WXYZoomImage-WXYZoomImage";
 			target = D85A920C35715A6BCA77639F3A04FC66 /* WXYZoomImage-WXYZoomImage */;
-			targetProxy = D2E7380BEB81033858D2A36DC8D21990 /* PBXContainerItemProxy */;
+			targetProxy = FB29987776E18941607F4C56A2EFDFCE /* PBXContainerItemProxy */;
 		};
-		D4E617D672F30C61CEE77DE304E5B3EC /* PBXTargetDependency */ = {
+		3D18F2733ED189B7D32412AD8BCF10E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YYWebImage;
 			target = D3C42AFB698BA08B779BDACE53E069F7 /* YYWebImage */;
-			targetProxy = 0DBE75C6580ACE325F617031F0CF4FC1 /* PBXContainerItemProxy */;
+			targetProxy = EB08BA97AD9E5F5FFD0113E48DD67DC2 /* PBXContainerItemProxy */;
 		};
-		DBE654A9B1F1E99F55EDF1897D5364A8 /* PBXTargetDependency */ = {
+		5B3029334CB194CF4647F02E0D9FD2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WXYZoomImage;
+			target = 25D4A525D2F4554367C12E81688D4A09 /* WXYZoomImage */;
+			targetProxy = 679A762F18BCEECF27E11F5273226E14 /* PBXContainerItemProxy */;
+		};
+		69C7D7800A1D33AB1D5B733DA9F3D694 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YYWebImage;
 			target = D3C42AFB698BA08B779BDACE53E069F7 /* YYWebImage */;
-			targetProxy = 1561D41480E61816A48BA25C2330AF84 /* PBXContainerItemProxy */;
+			targetProxy = B21A129FE75660C97713974EC039A212 /* PBXContainerItemProxy */;
+		};
+		8D7C71C28D224780122A4EF24DDBE38D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = E01BC1BE8376000D08331E0AF1526257 /* Reachability */;
+			targetProxy = 5AEE6C7F789E074ABD0909D0816B9949 /* PBXContainerItemProxy */;
+		};
+		9A65667886ADDA3F3A2696CA7C5FBEBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYWebImage;
+			target = D3C42AFB698BA08B779BDACE53E069F7 /* YYWebImage */;
+			targetProxy = 05B0E77D293A2DA1A50142D9F5C70177 /* PBXContainerItemProxy */;
+		};
+		CDF8060E556F4810A2902775FE635A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WXYZoomImage;
+			target = 25D4A525D2F4554367C12E81688D4A09 /* WXYZoomImage */;
+			targetProxy = 5CC914F15F5CB0ABC627EF3579273514 /* PBXContainerItemProxy */;
+		};
+		EDF06F244D66C22BA8B6BFDDEE06D8B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = E01BC1BE8376000D08331E0AF1526257 /* Reachability */;
+			targetProxy = 8D01845496F8E6B2DEE2BB4C7972307F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		47FAA374521354FF3FF1D067B10772FE /* Release */ = {
+		093E77BB221360D68656D24858D66B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 166D141DE33789B179DF08D81718EFD8 /* Pods-WXYZoomImage_Example.release.xcconfig */;
+			baseConfigurationReference = 543CFC2F2563C16C9673F19E4364BFA5 /* Pods-WXYZoomImage_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WXYZoomImage_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-WXYZoomImage_Tests/Pods-WXYZoomImage_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_WXYZoomImage_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15515378149D4EFD4C2043E0F83EB666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A501E64763BC054C70A66340488A6846 /* Pods-WXYZoomImage_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -815,6 +980,89 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_WXYZoomImage_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E6A515E61CD3A112F4E204E69B3ACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C7DCCBA09D085F439C8EC30D66FC4A /* Pods-WXYZoomImage_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WXYZoomImage_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-WXYZoomImage_Example/Pods-WXYZoomImage_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_WXYZoomImage_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		488A4ABB2EC9E8159D495EDDD8A45987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA3CE778EF3BAF1FAC59923D981686B /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reachability/Reachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A21F61A2290F94D9D01F569F084374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA3CE778EF3BAF1FAC59923D981686B /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reachability/Reachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Reachability;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -935,33 +1183,6 @@
 			};
 			name = Release;
 		};
-		BA330F5B0B0FE6C611ACF0FE2AB7817A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WXYZoomImage/WXYZoomImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WXYZoomImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WXYZoomImage/WXYZoomImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = WXYZoomImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BBF52230295913CB0FFF26BDE51BF883 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */;
@@ -974,36 +1195,7 @@
 			};
 			name = Release;
 		};
-		BE85C2FC8401F98B6B11B0A5AEA66C37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBA1B334D1414F2B70EEDEEF9A08CCCE /* Pods-WXYZoomImage_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WXYZoomImage_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-WXYZoomImage_Example/Pods-WXYZoomImage_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_WXYZoomImage_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CB6ED67743F7BF3D5E25E83CB81C58BF /* Release */ = {
+		BF739F420A990C3799DA8E1B099CF7DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */;
 			buildSettings = {
@@ -1020,7 +1212,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WXYZoomImage/WXYZoomImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = WXYZoomImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1028,11 +1220,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E097D6C384053BD7ADB07F42BD21F80B /* Release */ = {
+		D8409A11D3222AB6EC5A55655FB0B6B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FA72D5202D815B33794463643702A61 /* Pods-WXYZoomImage_Tests.release.xcconfig */;
+			baseConfigurationReference = 9E8E38592C950152B8CDA7D9BC08B24C /* Pods-WXYZoomImage_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1051,6 +1243,33 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_WXYZoomImage_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD8B2FAF2206249050A6070FF40B194D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B925AEFB611CC5ED5D539CA86A6CC8A4 /* WXYZoomImage-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WXYZoomImage/WXYZoomImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WXYZoomImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WXYZoomImage/WXYZoomImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = WXYZoomImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1086,47 +1305,9 @@
 			};
 			name = Debug;
 		};
-		F2A60939C44AD240CA288CC0FFA43F62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D84A75D7EC766BA9A77BCBCF7AB0B24 /* Pods-WXYZoomImage_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WXYZoomImage_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-WXYZoomImage_Tests/Pods-WXYZoomImage_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_WXYZoomImage_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0362CE45D254A20D4610EA5A90F84C67 /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE85C2FC8401F98B6B11B0A5AEA66C37 /* Debug */,
-				47FAA374521354FF3FF1D067B10772FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		11AC9EA567BF72F9B9C07A089F6EDFF7 /* Build configuration list for PBXNativeTarget "WXYZoomImage-WXYZoomImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1145,20 +1326,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A3C6D73558401AEE8171D061FD30B40 /* Build configuration list for PBXNativeTarget "WXYZoomImage" */ = {
+		6FD7CBB962CC5E89BABD4A56F826024F /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA330F5B0B0FE6C611ACF0FE2AB7817A /* Debug */,
-				CB6ED67743F7BF3D5E25E83CB81C58BF /* Release */,
+				093E77BB221360D68656D24858D66B6F /* Debug */,
+				D8409A11D3222AB6EC5A55655FB0B6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CF3698A7BCCBCB310091FFF7D10124C /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Tests" */ = {
+		8699F004A72155447BB9EA471430AC6C /* Build configuration list for PBXNativeTarget "Reachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2A60939C44AD240CA288CC0FFA43F62 /* Debug */,
-				E097D6C384053BD7ADB07F42BD21F80B /* Release */,
+				488A4ABB2EC9E8159D495EDDD8A45987 /* Debug */,
+				4A21F61A2290F94D9D01F569F084374D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1168,6 +1349,24 @@
 			buildConfigurations = (
 				EB8E410CC093285C382EF1777A0F18DA /* Debug */,
 				9AB02FC6A4FB5A2FE8DC44959DBD848F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDAF999C9A0A1E01762D6717D0AF230D /* Build configuration list for PBXNativeTarget "WXYZoomImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF739F420A990C3799DA8E1B099CF7DD /* Debug */,
+				DD8B2FAF2206249050A6070FF40B194D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE7DBBDBD66926F7163A1C8B78D2DEB /* Build configuration list for PBXNativeTarget "Pods-WXYZoomImage_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6A515E61CD3A112F4E204E69B3ACF2 /* Debug */,
+				15515378149D4EFD4C2043E0F83EB666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

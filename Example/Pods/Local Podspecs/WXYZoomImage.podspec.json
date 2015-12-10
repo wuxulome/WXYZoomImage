@@ -2,7 +2,6 @@
   "name": "WXYZoomImage",
   "version": "0.1.0",
   "summary": "A easy way to zoom image.",
-  "description": "",
   "homepage": "https://github.com/wuxulome/WXYZoomImage",
   "license": {
     "type": "MIT",
@@ -30,6 +29,9 @@
   "dependencies": {
     "YYWebImage": [
 
+    ],
+    "Reachability": [
+      "~> 3.2"
     ]
   }
 }
