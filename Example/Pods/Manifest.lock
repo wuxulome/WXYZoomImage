@@ -1,6 +1,6 @@
 PODS:
   - Reachability (3.2)
-  - WXYZoomImage (0.1.0):
+  - WXYZoomImage (0.1.1):
     - Reachability (~> 3.2)
     - YYWebImage
   - YYWebImage (0.9.11)
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  WXYZoomImage: 0f1abe2797aab6d187592a6e8e6566461fc8968a
+  WXYZoomImage: 341f79292c0a1b484bdc8793e88f819c934e55e2
   YYWebImage: a65b28461dc63d3b84de7c06ea0fbc4d46cdcd16
 
 COCOAPODS: 0.38.2

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F577E8FE644BC73CE78DAEEE"
+               BlueprintIdentifier = "1ADE6C8FBB21948C44E04F8B"
                BuildableName = "WXYZoomImage.framework"
                BlueprintName = "WXYZoomImage"
                ReferencedContainer = "container:Pods.xcodeproj">

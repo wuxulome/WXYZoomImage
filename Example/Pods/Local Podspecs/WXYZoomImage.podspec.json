@@ -1,6 +1,6 @@
 {
   "name": "WXYZoomImage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A easy way to zoom image.",
   "homepage": "https://github.com/wuxulome/WXYZoomImage",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/wuxulome/WXYZoomImage.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "6.0"
