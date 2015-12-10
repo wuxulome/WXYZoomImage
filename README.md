@@ -5,7 +5,6 @@ WXYZoomImage
 [![CocoaPods](http://img.shields.io/cocoapods/v/WXYZoomImage.svg?style=flat)](http://cocoapods.org/?q=WXYZoomImage)&nbsp;
 [![CocoaPods](http://img.shields.io/cocoapods/p/WXYZoomImage.svg?style=flat)](http://cocoapods.org/?q=WXYZoomImage)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%206%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
-[![Build Status](https://travis-ci.org/ibireme/WXYZoomImage.svg?branch=master)](https://travis-ci.org/ibireme/WXYZoomImage)&nbsp;
 
 WXYZoomImage is a image zoom tool.
 
