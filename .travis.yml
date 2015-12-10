@@ -5,4 +5,3 @@ xcode_scheme: WXYZoomImage
 
 script:
 - set -o pipefail && xcodebuild test -workspace Example/WXYZoomImage.xcworkspace -scheme WXYZoomImage-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
